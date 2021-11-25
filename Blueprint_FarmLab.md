@@ -13,6 +13,22 @@ Maarten Luyts is de productowner en begeleider van het project.
 Farmlab is een project voor IOT studenten van het 2e jaar. Er wordt verder gebouwd op vorige itteraties. 
 Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in water liggen en via voedingsstoffen in het water kunnen groeien. 
 ## Situatie As-Is
+
+Dit is de vierde iteratie van het project, documentatie van de vorige groepen zijn hier te vinden:
+
+1. https://github.com/jp19-lafa/Documentation/wiki
+2. https://ap-it-gh.github.io/lf-xy1-docs/#/ | https://ap-it-gh.github.io/lf-xy2-docs/#/
+3. tag (StartInternetOfThings) op deze repo
+
+Deze iteratie heeft als doel de 3de iteratie te fine tunen:
+- Maken van 2 kast clones
+- Minimaal 1 keer oogsten
+- Automatisatie
+- Documentatie
+
+*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README documentatie*
+
+
 ## Situatie To-Be
 ### Projectdefinitie
 ## Planning
