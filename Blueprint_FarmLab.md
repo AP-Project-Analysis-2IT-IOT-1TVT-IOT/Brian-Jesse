@@ -32,3 +32,4 @@ Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur ku
 
 ### Gantt schema
 
+![image](https://user-images.githubusercontent.com/91600019/143431525-f699a711-61bb-4028-93d6-db2c1d5af95d.png)
