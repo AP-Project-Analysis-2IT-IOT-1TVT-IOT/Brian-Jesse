@@ -29,3 +29,6 @@ Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur ku
 |Analyse van security en eventuele autorisatierollen | 16 dec|
 |Documentatie | 23 dec|
 |Bronvermelding | altijd|
+
+### Gantt schema
+
