@@ -10,23 +10,62 @@ Maarten Luyts is de productowner en begeleider van het project.
 
 ## Samenvatting
 
-Farmlab is een project voor IOT studenten van het 2e jaar. Er wordt verder gebouwd op vorige itteraties. 
-Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in water liggen en via voedingsstoffen in het water kunnen groeien. 
+Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. *Wij bouwen verder op iteratie vier. 
+
+Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. 
+
+De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 ## Situatie As-Is
 
-Dit is de vierde iteratie van het project, documentatie van de vorige groepen zijn hier te vinden:
+Momenteel zijn ze aan de vierde iteratie van het farmlab bezig. De documentatie van de vorige groepen zijn hier te vinden:
 
-1. https://github.com/jp19-lafa/Documentation/wiki
-2. https://ap-it-gh.github.io/lf-xy1-docs/#/ | https://ap-it-gh.github.io/lf-xy2-docs/#/
-3. tag (StartInternetOfThings) op deze repo
+- https://github.com/jp19-lafa/Documentation/wiki
+- https://ap-it-gh.github.io/lf-xy1-docs/#/ | https://ap-it-gh.github.io/lf-xy2-docs/#/
+- https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README
 
-Deze iteratie heeft als doel de 3de iteratie te fine tunen:
-- Maken van 2 kast clones
-- Minimaal 1 keer oogsten
-- Automatisatie
-- Documentatie
+Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
 
+<ol>
+  <li>Ordelijke opbouw van de kast</li>
+  <ul>
+    <li>Kabelmanagement opbouwen</li>
+    <ul>
+      <li>Kabels op lengte</li>
+      <li>Kabel bescherming</li>
+      <li>Juiste kabels gebruiken</li>
+    </ul>
+    <li>Makkelijke installatie + demontage</li>
+    <ul>
+      <li>Gebruik maken van klik of schuif systeem voor bevestiging</li>
+    </ul>
+    <li>Betere indeling opstellen</li>
+    <li>3D supports herwerken</li>
+    <ul>
+      <li>Minder zwaar maken</li>
+      <li>Iets lager maken</li>
+    </ul> 
+  </ul>
+  <li>Automatisatie</li>
+  <ul>
+    <li>Juiste instellingen per plant </li>
+    <li>Automatische aansturing van alle componenten</li>
+  </ul>
+  <li>PCB's herwerken</li>
+  <ul>
+    <li>Opmaat maken van de cases</li>
+    <li>ESP12 integreren ipv nodeMCU</li>
+    <li>Zekering toevoegen</li>
+    <li>Hoeken afronden</li>
+    <li>Grotere weerstand pads</li>
+    <li>Silkscreen standariseren</li>
+    <li>Mosfets kunnen plat leggen</li>
+    <li>Betere koeling optie voorzien</li>
+  </ul>
+</ol>
+
+*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README documentatie*
+
 
 
 ## Situatie To-Be
@@ -40,7 +79,7 @@ Deze iteratie heeft als doel de 3de iteratie te fine tunen:
 
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
-| Samenvatting| 2 Dec       |TBD|
+| Samenvatting| 2 Dec       |Jesse Denaux|
 | As is / To be| 2 Dec      |TBD|
 | Functioneel design| 2 dec |TBD|
 | Technische design | 9 dec |TBD|
