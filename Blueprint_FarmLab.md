@@ -98,6 +98,9 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
 ## Planning uitvoering (2de semester)
 
 ## Functioneel design
+
+de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder na denken)
+
 ### kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
 ### kast ontwerp
@@ -119,6 +122,9 @@ de kast bestaat uit verschillende onderdelen
       <li>X-Y systeem</li>
   </ul>
 </ol>
+
+Deze onderdelen wordenin het technisch design verder uitgepunt.
+
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
