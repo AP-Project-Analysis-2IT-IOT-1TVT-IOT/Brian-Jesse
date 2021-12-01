@@ -17,7 +17,7 @@ Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur ku
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 ## Situatie As-Is
 
-Momenteel zijn ze aan de vierde iteratie van het farmlab bezig. De documentatie van de vorige groepen zijn hier te vinden:
+Momenteel wordt er aan de vierde iteratie van het farmlab gewerkt. De documentatie van de vorige groepen zijn hier te vinden:
 
 - https://github.com/jp19-lafa/Documentation/wiki
 - https://ap-it-gh.github.io/lf-xy1-docs/#/ | https://ap-it-gh.github.io/lf-xy2-docs/#/
@@ -63,12 +63,31 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
   </ul>
 </ol>
 
-*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen
+In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en geautomatiseerd. 
+
+*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README documentatie*
 
 
 
 ## Situatie To-Be
+
+In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verder verwerkt. Dit houdt in dat de vijf verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. De vijf componenten zijn: 
+<ul>
+  <li>Pomp controller</li>
+  De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen zodat er geen algen of andere planten in het water groeien doordat het water te lang     heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiken niet om de zoveel tijd manueel de pomp moet aanzetten. Tot nu toe wordt er gewerkt met een pomp die   manueel wordt aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
+  <li>Led Controller/Light sensor</li>
+  De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant. 
+  <li>XY systeem</li>
+  Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in de     kast wordt geteeld en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem aanpassen indien   nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op de kast gemonteerd en kan dit bewegen in het XY-     vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
+  <li>Temperatuur sensor?</li>
+  <li>Water sensor?</li>
+</ul>  
+In detail moeten van de vijf componenten de PCB's herwerkt worden zodat deze geen ESP12's maar ESP32's zijn. Het hele systeem moet on the spot werken en aanpasbaar zijn. Het kablemanagement moet worden herbekeken en verbeterd. 
+Alles wordt zo ontworpen dat dit gemakkelijk reproduceerbaar is zodat er een tweede kast kan worden gemaakt. 
+
+
+
 ### Projectdefinitie
 ## Planning
 - Kanban
@@ -80,10 +99,10 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
 | Samenvatting| 2 Dec       |Jesse Denaux|
-| As is / To be| 2 Dec      |TBD|
-| Functioneel design| 2 dec |TBD|
+| As is / To be| 2 Dec      |Jesse Denaux|
+| Functioneel design| 2 dec |Brian Van Campen|
 | Technische design | 9 dec |TBD|
-| Beschrijving van mogelijke intefaces | 9 dec|TBD|
+| Beschrijving van mogelijke interfaces | 9 dec|TBD|
 | Beschrijving van eventuele datamigratie | 9 dec |TBD|
 | Beschrijving van eventuele impact op de huidige infrastructuur | 16 dec|TBD|
 |Analyse van security en eventuele autorisatierollen | 16 dec|TBD|
