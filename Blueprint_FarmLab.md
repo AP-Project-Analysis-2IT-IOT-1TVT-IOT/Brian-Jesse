@@ -98,6 +98,28 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
 ## Planning uitvoering (2de semester)
 
 ## Functioneel design
+### kast
+![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
+### kast ontwerp
+![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
+
+### schema
+![image](https://user-images.githubusercontent.com/91600019/144229006-644931ab-e276-4dd6-99b1-0a40964e349c.png)
+
+
+de kast bestaat uit verschillende onderdelen
+
+<ol>
+  <ul>
+      <li>led controller</li>
+      <li>lichtsensor</li>
+      <li>pomp controller</li>
+      <li>temperatuur sensor</li>
+      <li>water sensor</li>
+      <li>X-Y systeem</li>
+  </ul>
+</ol>
+
 ## Technisch design
 ### Smart Object (Hardware Analyse)
 ### Smart Object (Software Analyse)
