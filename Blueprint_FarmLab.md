@@ -53,7 +53,7 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
   <li>PCB's herwerken</li>
   <ul>
     <li>Opmaat maken van de cases</li>
-    <li>ESP12 integreren ipv nodeMCU</li>
+    <li>ESP32 integreren ipv nodeMCU</li>
     <li>Zekering toevoegen</li>
     <li>Hoeken afronden</li>
     <li>Grotere weerstand pads</li>
@@ -121,7 +121,10 @@ Alles wordt zo ontworpen dat dit gemakkelijk reproduceerbaar is zodat er een twe
 | aanpassen PCB lichtsensor| 2de semester       |TBD|
 | aanpassen PCB temperatuursensor| 2de semester       |TBD|
 | aanpassen PCB watersensor| 2de semester       |TBD|
+| checken pomp controller| 2de semester       |TBD|
 | X-Y syteem| 2de semester      |TBD|
+| kast kabelmanagement| 2de semester      |TBD|
+| kast uittesten voor een maand| 2de semester      |TBD|
 ## Functioneel design
 
 de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder na denken)
