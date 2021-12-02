@@ -134,8 +134,7 @@ de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder n
 ### kast ontwerp
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
 
-### schema
-![image](https://user-images.githubusercontent.com/91600019/144229006-644931ab-e276-4dd6-99b1-0a40964e349c.png)
+
 
 
 de kast bestaat uit verschillende onderdelen
@@ -156,6 +155,20 @@ Deze onderdelen wordenin het technisch design verder uitgepunt.
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
+### opsplitsen PCB's
+### blokdiagram 
+![image](https://user-images.githubusercontent.com/91600019/144410226-27c9dff8-ce96-48e8-9040-76fee4c9c816.png)
+### Hardware keuze
+| naam        |voltage(v)   |Stroom(A)   |
+| ----------- | ----------- |----------- |
+| Pomp|5|0,9-1,7|
+| Raspbery Pi|5|600mA-1,2|
+| ESP32|3,3|170mA|
+| Stepper Motor driver|12-24|2,5(MAX)|
+| Led strip|12|400mA|
+### Comunicatie keuze
+### voeding keuze
+### baterij keuze
 ### Smart Object (Software Analyse)
 ## Beschrijving van de mogelijke interfaces
 ## Beschrijving van eventuele datamigratie
