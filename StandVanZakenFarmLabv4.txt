@@ -1,0 +1,26 @@
+Wat wij verwachten af te hebben tegen het einde van het jaar:
+- De PVC opstelling voor water en planten:
+	- Alle buizen voor het water door te laten stromen 
+	- Potjes waar de planten in komen te staan
+	- Buizen zijn vastgemaakt met 3d printed supports
+	- 3d houder voor de pomp te stabiliseren
+- Basis automatisatie, hier is nog uitbreiding mogenlijk
+	- Pomp gaat op bepaalde tijdstippen voor enkele minuten aan om het water rond te pompen.
+	- LED's gaan aan of uit adh van de hoeveelheid licht dat de lichtsensor meet
+	- eventuele python of node-red auto testing script (eerste versie)
+- Ophangsysteem voor voeding en 2de versie PCB's (3d printed supports)
+	- Ophangsysteem voor de voeding kunnen wij al volledig uitwerken
+	- Ophangsysteem voor de PCB's kunnen wij al een eerste versie maken maar deze moet nog aangepast worden naar maten de 2de versies van de PCB's afwijken van ons idee
+- Kable management: Alle kabels zo mooi mogenlijk weggestoken in de kast 
+- In het algemeen:
+	- Ons doel tegen het einde van het jaar is een eerste versie van de kast die volledig op zijn eigen kan functioneren
+	- Er zijn op meerdere vlakken verbeteringen/aanpassingen mogenlijk
+	
+Nog ideeen die wij hebben maar waarschijnlijk niet kunnen implemeteren:
+- Het XY-systeem op fotos te nemen van de planten
+- NodeRed dashboard verder uitbreiden adh van de fotos van het XY-systeem
+- Verdere uiterking automatisatie met NodeRed (met user input bv)
+- Opbouw van een 2de identieke kast
+- Tweede versie van de PCB's (hier zijn al ideen voor maar die kunnen wij niet meer implementeren)
+- Er is een 2de pomp aanwezig (die al aangestuurd kan worden) voor voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien maar de exacte hoeveelheden en implementatie hiervan is nog niet aanwezig
+(De MQTT code hiervoor is wel al geimplementeerd op zowel node-red als de nodemcu/pompcontroller)
