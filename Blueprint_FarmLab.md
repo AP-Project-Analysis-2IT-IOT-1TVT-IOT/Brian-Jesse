@@ -72,19 +72,7 @@ In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en 
 
 ## Situatie To-Be
 
-In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verder verwerkt. Dit houdt in dat de vijf verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. De vijf componenten zijn: 
-<ul>
-  <li>Pomp controller</li>
-  De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen zodat er geen algen of andere planten in het water groeien doordat het water te lang     heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiken niet om de zoveel tijd manueel de pomp moet aanzetten. Tot nu toe wordt er gewerkt met een pomp die   manueel wordt aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
-  <li>Led Controller/Light sensor</li>
-  De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant. 
-  <li>XY systeem</li>
-  Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in de     kast wordt geteeld en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem aanpassen indien   nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op de kast gemonteerd en kan dit bewegen in het XY-     vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
-  <li>Temperatuur sensor?</li>
-  <li>Water sensor?</li>
-</ul>  
-In detail moeten van de vijf componenten de PCB's herwerkt worden zodat deze geen ESP12's maar ESP32's zijn. Het hele systeem moet on the spot werken en aanpasbaar zijn. Het kablemanagement moet worden herbekeken en verbeterd. 
-Alles wordt zo ontworpen dat dit gemakkelijk reproduceerbaar is zodat er een tweede kast kan worden gemaakt. 
+
 
 
 
@@ -139,17 +127,22 @@ de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder n
 
 de kast bestaat uit verschillende onderdelen
 
-<ol>
-  <ul>
-      <li>led controller</li>
-      <li>lichtsensor</li>
-      <li>pomp controller</li>
-      <li>temperatuur sensor</li>
-      <li>water sensor</li>
-      <li>X-Y systeem</li>
-  </ul>
-</ol>
 
+<ul>
+  <li>Pomp controller</li>
+      De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen zodat er geen algen of andere planten in het water groeien doordat het         water    te lang     heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiken niet om de zoveel tijd manueel de pomp moet aanzetten. Tot nu         toe wordt er gewerkt met een pomp die   manueel wordt aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
+  <li>Led Controller</li>
+      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant.
+  <li>Light sensor</li>
+       
+  <li>X-Y systeem</li>
+      Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de         plant die in de     kast wordt geteeld en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant,       het pomp systeem aanpassen indien   nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op       de kast gemonteerd en kan dit bewegen in het XY-     vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
+  <li>Temperatuur sensor?</li>
+  <li>Water sensor?</li>
+</ul>  
+
+
+functioneel design verschillende punten functie uitleggen of nodig is en waarom nodig/nutting is voor wie?
 Deze onderdelen wordenin het technisch design verder uitgepunt.
 
 
@@ -163,7 +156,7 @@ Deze onderdelen wordenin het technisch design verder uitgepunt.
 | ----------- | ----------- |----------- |
 | Pomp|5|0,9-1,7|
 | Raspbery Pi|5|600mA-1,2|
-| ESP32|3,3|170mA|
+| ESP32|3,3|240mA|
 | Stepper Motor driver|12-24|2,5(MAX)|
 | Led strip|12|400mA|
 ### Comunicatie keuze
