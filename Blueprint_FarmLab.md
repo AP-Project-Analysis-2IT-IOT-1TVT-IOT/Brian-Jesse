@@ -115,7 +115,13 @@ Alles wordt zo ontworpen dat dit gemakkelijk reproduceerbaar is zodat er een twe
 ![image](https://user-images.githubusercontent.com/91600019/143431525-f699a711-61bb-4028-93d6-db2c1d5af95d.png)
 
 ## Planning uitvoering (2de semester)
-
+| Hoofdlijnen |  Datum      | Student    |
+| ----------- | ----------- |----------- |
+| aanpassen PCB Ledcontroller| 2de semester       |TBD|
+| aanpassen PCB lichtsensor| 2de semester       |TBD|
+| aanpassen PCB temperatuursensor| 2de semester       |TBD|
+| aanpassen PCB watersensor| 2de semester       |TBD|
+| X-Y syteem| 2de semester      |TBD|
 ## Functioneel design
 
 de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder na denken)
