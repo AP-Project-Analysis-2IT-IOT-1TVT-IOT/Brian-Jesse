@@ -44,16 +44,24 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
       <li>Minder zwaar maken</li>
       <li>Iets lager maken</li>
     </ul> 
+    <li> PVC opstelling voor water en planten </li>
+    <ul>
+      <li>Alle buizen voor het water door te laten stromen</li>
+      <li>Potjes voor planten</li>
+      <li>3D houder voor pomp stabiliseren</li>
+    </ul
   </ul>
-  <li>Automatisatie</li>
-  <ul>
-    <li>Juiste instellingen per plant </li>
-    <li>Automatische aansturing van alle componenten</li>
+  </ul>
+    <li>Automatisatie</li>
+    <ul>
+      <li>Juiste instellingen per plant </li>
+      <li>Automatische aansturing van alle componenten</li>
+    </ul>
   </ul>
   <li>PCB's herwerken</li>
   <ul>
     <li>Opmaat maken van de cases</li>
-    <li>ESP32 integreren ipv nodeMCU</li>
+    <li>ESP12 integreren ipv nodeMCU</li>
     <li>Zekering toevoegen</li>
     <li>Hoeken afronden</li>
     <li>Grotere weerstand pads</li>
@@ -72,8 +80,33 @@ In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en 
 
 ## Situatie To-Be
 
+In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verder verwerkt. Dit houdt in dat de zes verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. 
 
+De 3 hoofdproblemen van de as is worden verder uitgewerkt. 
 
+<ol>
+   <li>Kast</li>
+    <ul>
+      <li>Test 1e kast</li>
+      <li>Opbouw 2e kast</li>
+    </ul>
+  <li>Automatisatie</li>
+    <ul>
+      <li>Node Red</li>
+      <li>User input</li>
+      <li>Tweede pomp voor voedingsstoffen</li>
+      <li>XY systeem</li>
+    </ul>
+  <li>PCB's herwerken naar ESP32</li>
+    <ul>
+      <li>Pomp Controller</li>
+      <li>Light sensor</li>
+      <li>Led controller</li>
+      <li>Water controller</li>
+      <li>Temperatuur controller</li>
+    </ul>
+ 
+</ol>
 
 
 ### Projectdefinitie
