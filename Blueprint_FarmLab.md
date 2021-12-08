@@ -256,6 +256,116 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
 ### Smart Object (Software Analyse)
+
+### Data
+
+Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
+Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
+
+<ol>
+  <li>PompController: </li>
+  <ul>
+    <li>NodeRED -> RaspberryPi broker -> ESP32 op pompcontroller:</li>
+    <ul>
+      <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
+      <li>String "on" => Pomp gaat aan</li>
+      <li>String "off" => Pomp gaan uit</li>
+    </ul>
+  </ul>
+  <li>LEDController:  </li>
+  <ul>
+    <li>NodeRED -> RaspberryPi broker -> ESP32 op LEDController:</li>
+    <ul>
+      <li>Topics: farm/x/licht/level/y => y = level 1,2 OF 3</li>
+      <li>String "on" => LED's op level y gaat aan</li>
+      <li>String "off" => LED's op level y gaat uit </li>
+    </ul>
+  </ul>
+  <li>Lichtcontroller: </li>
+  <ul>
+    <li>ESP32 op LichtSensorController -> RaspberryPi broker -> NodeRED</li>
+    <ul>
+      <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
+      <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
+      <li>r worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
+    </ul>
+  </ul>
+</ol>
+
+### Flowchart
+  
+  ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png)
+
+### Specificaties
+
+| HTTP        |MQTT   |
+| ----------- | ----------- |
+| Vrij zwaar protocol: de header van een package is al groter dan 1 bericht van MQTT
+(min +- 26 bytes header vs enkele bytes MQTT message) | Weinig data → meer keuzes op fysieke laag, trage links worden mogelijk |
+| Software stack / Software stack / Library Library is vrij zwaar heeft een zeer kleine footprint | Lightweight → protocol last ook in kleine devices, sensors.. met weinig geheugen & cpu power. |
+| Geen ingebouwde Standaard enkele QoS mogelijkheden| Standardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack|
+| | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
+
+=> Wij gaan gebruik maken van MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
+
+### IOT Dashboard/Platform
+
+**We hebben een platform/server nodig om:**
+
+- Verzamelde data weer te geven
+- Controle opdrachten te sturen
+- Automatisatie programma's te beheren
+
+|Node-RED|Thingsboard|Freeboard.io|
+| ----------- | ----------- | ----------- |
+| Open-source | Open-source+ professional(betalend) | Open-source |
+| Flows | Entities |  |
+| no API | API |  |
+| Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box
+(Not actively developed Plugin available) |
+| Makkelijk om snel data te kunnen verwerken naar een dashboard aan de hand van flows | Eerder gemaakt voor professionele klanten, werkt met verschillende entities voor apparaten en klanten. |  |
+
+=> Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
+
+
+### Analyse LEDController
+
+### Blok diagram
+
+### schema
+
+### Analyse LichtSensorController
+
+### Blok diagram
+
+### Component keuze
+
+De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
+
+### schema
+
+### Analyse PompController
+
+### Blok diagram
+
+### schema
+
+### Analyse TemperatuurSensor
+
+### Blok diagram
+
+### Component keuze
+
+De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
+
+### schema
+
+### Analyse WaterSensor
+
+### Blok diagram
+
+### schema
+
 ## Beschrijving van de mogelijke interfaces
 ## Beschrijving van eventuele datamigratie
 ## Beschrijving van eventuele impact op de huidige infrastructuur
