@@ -150,6 +150,31 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder na denken)
 
+
+
+de kast bestaat uit verschillende onderdelen
+
+
+<ul>
+  <li>Pomp controller</li>
+      De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen zodat er geen algen of andere planten in het water groeien doordat het         water    te lang     heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiken niet om de zoveel tijd manueel de pomp moet aanzetten. Tot nu         toe wordt er gewerkt met een pomp die   manueel wordt aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
+  <li>Led Controller</li>
+      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant.
+  <li>Light sensor</li>
+       detecteert of de leds aan of uit moeten.
+  <li>X-Y systeem</li>
+      Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de         plant die in de     kast wordt geteeld en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant,       het pomp systeem aanpassen indien   nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op       de kast gemonteerd en kan dit bewegen in het XY-     vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
+  <li>Temperatuur sensor?</li>
+      bepaald de temeratuur voor de gepaste plant de gebruiker kan dan de temeratuur bekijken
+  <li>Water sensor?</li>
+      bepaald of er genoeg water is dit stuurt de pomp controller aan
+</ul>  
+
+Deze onderdelen wordenin het technisch design verder uitgepunt.
+
+
+## Technisch design
+### Smart Object (Hardware Analyse)
 ### kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
 ### kast ontwerp
@@ -183,29 +208,6 @@ documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfar
 | breedte buitenste diameter: 65mm| breedte diameter2: 40mm      |
 || de dikte van de binnenkant: 0.5mm      |
 
-de kast bestaat uit verschillende onderdelen
-
-
-<ul>
-  <li>Pomp controller</li>
-      De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen zodat er geen algen of andere planten in het water groeien doordat het         water    te lang     heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiken niet om de zoveel tijd manueel de pomp moet aanzetten. Tot nu         toe wordt er gewerkt met een pomp die   manueel wordt aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
-  <li>Led Controller</li>
-      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant.
-  <li>Light sensor</li>
-       
-  <li>X-Y systeem</li>
-      Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de         plant die in de     kast wordt geteeld en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant,       het pomp systeem aanpassen indien   nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op       de kast gemonteerd en kan dit bewegen in het XY-     vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
-  <li>Temperatuur sensor?</li>
-  <li>Water sensor?</li>
-</ul>  
-
-
-functioneel design verschillende punten functie uitleggen of nodig is en waarom nodig/nutting is voor wie?
-Deze onderdelen wordenin het technisch design verder uitgepunt.
-
-
-## Technisch design
-### Smart Object (Hardware Analyse)
 ### opsplitsen PCB's
 ### blokdiagram 
 ![image](https://user-images.githubusercontent.com/91600019/144410226-27c9dff8-ce96-48e8-9040-76fee4c9c816.png)
@@ -218,8 +220,41 @@ Deze onderdelen wordenin het technisch design verder uitgepunt.
 | Stepper Motor driver|12-24|2,5(MAX)|
 | Led strip|12|400mA|
 ### Comunicatie keuze
+| Type        |voordelen   |nadelen   |
+| ----------- | ----------- |----------- |
+| Wifi|-groot bereik<br>-makkelijk uitbreidbaar<br>-middelmatige afstand<br>-snel<br>-security instelbaar<br>-connectie naar Raspberry pi server mogelijk |-verbruikt relatief veel energie|
+|Bluetooth|-makkelijk<br>-relatief zuinig|-korte afstand<br>-traag<br>-geen security<br>-ondersteund weinig apparaten (max 8)|
+|Bedraad |-Makkelijk op korte afstand<br>-minder kans op externe verstoringen<br>-geen antenne nodig|-niet ideaal voor lange afstand (onoverzichtelijk)<br>-moeilijk uitbreidbaar|
+
+**onze keuze:**
+
+- Bedrade communicatie willen we enkel voor zeer korte afstanden gebruiken of indien er geen ander optie is.
+- Draadloze communicatie gaan we gebruiken voor het grootste deel van het project, het geeft ons de meeste uitbreidmogelijkheden en zorgt dat alles overzichtelijk blijft.
+Verder hebben we gekozen voor WIFI. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen werken is dit essentieel.
+
 ### voeding keuze
+
+| Type        |voordelen   |nadelen   |
+| ----------- | ----------- |----------- |
+| Batterij |-draadloos/ordelijk |-moeten opgeladen worden|
+| Bedrade voeding | -makkelijk |-meer bekabeling in de kast|
+
+**onze keuze:**
+
+We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo draadloos mogelijk willen bouwen, dus met behulp van batterijen. We voorzien wel steeds een backup aansluiting voor bekabelde voeding.
+
 ### baterij keuze
+
+
+| Type        |Voltage|Max stroom|voordelen   |nadelen   |
+| ----------- | ----------- |----------- |----------- |----------- |
+| 18650 | 4,2 |4 |-makkelijk<br>-hoge stroom|groot - moet in houder|
+| Lithium Ion batterij (PRT-13854 ROHS) | 3,7 |2,5|-klein/plat<br>-geen houder nodig<br>-voltage dicht bij ESP input voltage|- minder capaciteit|
+
+**onze keuze:**
+
+Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
+
 ### Smart Object (Software Analyse)
 ## Beschrijving van de mogelijke interfaces
 ## Beschrijving van eventuele datamigratie
