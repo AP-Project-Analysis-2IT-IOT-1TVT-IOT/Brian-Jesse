@@ -260,13 +260,27 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 ### Blok diagram
 
+![Blokdiagram LEDController](https://user-images.githubusercontent.com/93762886/144409413-384734cd-da02-40d7-85c4-8816499134a5.jpg)
+
 ### schema
 
 ### Analyse LichtSensorController
 
+
 ### Blok diagram
 
+![Blokdiagram LightSensorController](https://user-images.githubusercontent.com/93762886/144409443-323ffeed-b34c-4787-a961-60a1b6e7129b.jpg)
+
+
 ### Component keuze
+
+| naam        |Min dynamic range (Lux)|Max dynamic range (Lux)|Voeding   |Interface 	   |Prijs|
+| ----------- | ----------- |----------- |----------- |----------- |----------- |
+|[lichtweerstand](https://www.kiwi-electronics.nl/nl/lichtgevoelige-weerstand-ldr-416)| 1 |10|1V-200V| Analoog | 1,95€ |
+| [TSL2561](https://www.adafruit.com/product/439) | 0.1 |40000 | 2,7-3,6V | I2C  	|+-5€ |
+| [TSL2591](https://shop.mchobby.be/en/environnemental-press-temp-hum-gas/1599-tsl2591-sensor-lux-luminosite-lumiere-digital-3232100015999-adafruit.html) | 188µ | 	88000 |3,3-5V | I2C |  	8,69€ |
+|[TSL2591](https://www.kiwi-electronics.nl/nl/si1145-digital-uv-index-ir-visible-light-sensor-1574) | NaN | NaN | 3-5V | I2C | 11,99€ |
+
 
 De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
@@ -276,13 +290,29 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Blok diagram
 
+![Blokdiagram PompController](https://user-images.githubusercontent.com/93762886/144409195-9e36a6c3-2793-4124-bb0b-249a69ca0799.jpg)
+
+
 ### schema
 
 ### Analyse TemperatuurSensor
 
 ### Blok diagram
 
+![Blokdiagram TemperatuurSensor](https://user-images.githubusercontent.com/93762886/144409469-23a90a77-6c57-4449-9c3a-1b72775a3237.jpg)
+
 ### Component keuze
+
+
+| naam |min temp (°C)|max temp (°C)|accuraatheid (°C)|min voltage (V)| min voltage (V) |mounting|soort|Prijs|
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| dht11 | 0 | 50 | 2 | 3 | 5 | thru hole | packet | 2,45 |
+| dht22 | -4 | 80 | 0.5 | 3 | 5 | thru hole | packet | 9,95 |
+| HIH8121-021-001 | -25 | 85 | 0.5 | 2.3 | 5.5 | SMD | apart | 7,78 |
+| HIH6130-021-001 | -40 | 125 | 0.5 | 2.3 | 5.5 | thru hole | apart | 8,41 |
+| SHT31-DIS-B | -40 | 125 | 0.2 | 2.15 | 5.5 | SMD reflow | apart | 4,5 |
+
+
 
 De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
 
@@ -291,6 +321,8 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 ### Analyse WaterSensor
 
 ### Blok diagram
+
+![Blokdiagram WaterSensor](https://user-images.githubusercontent.com/93762886/144409496-eb333b6f-0036-42aa-8612-fcc7e833dca4.jpg)
 
 ### schema
 
