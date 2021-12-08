@@ -255,6 +255,47 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 
 Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
+
+### Analyse LEDController
+
+### Blok diagram
+
+### schema
+
+### Analyse LichtSensorController
+
+### Blok diagram
+
+### Component keuze
+
+De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
+
+### schema
+
+### Analyse PompController
+
+### Blok diagram
+
+### schema
+
+### Analyse TemperatuurSensor
+
+### Blok diagram
+
+### Component keuze
+
+De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
+
+### schema
+
+### Analyse WaterSensor
+
+### Blok diagram
+
+### schema
+
+
+
 ### Smart Object (Software Analyse)
 
 ### Data
@@ -328,43 +369,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 => Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
 
 
-### Analyse LEDController
 
-### Blok diagram
-
-### schema
-
-### Analyse LichtSensorController
-
-### Blok diagram
-
-### Component keuze
-
-De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
-
-### schema
-
-### Analyse PompController
-
-### Blok diagram
-
-### schema
-
-### Analyse TemperatuurSensor
-
-### Blok diagram
-
-### Component keuze
-
-De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
-
-### schema
-
-### Analyse WaterSensor
-
-### Blok diagram
-
-### schema
 
 ## Beschrijving van de mogelijke interfaces
 ## Beschrijving van eventuele datamigratie
