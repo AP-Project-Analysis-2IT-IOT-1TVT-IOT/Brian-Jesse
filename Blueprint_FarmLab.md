@@ -10,7 +10,7 @@ Maarten Luyts is de productowner en begeleider van het project.
 
 ## Samenvatting
 
-Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. *Wij bouwen verder op iteratie vier. 
+Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. Er wordt verder gebouwd op iteratie vier. 
 
 Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. 
 
@@ -80,7 +80,7 @@ In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en 
 
 ## Situatie To-Be
 
-In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verder verwerkt. Dit houdt in dat de zes verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. 
+In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verder verwerkt. Dit houdt in dat de zes verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. Daarnaast wordt er tijdens iteratie vijf een tweede kast opgebouwd. 
 
 De 3 hoofdproblemen van de as is worden verder uitgewerkt. 
 
@@ -89,6 +89,7 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
     <ul>
       <li>Test 1e kast</li>
       <li>Opbouw 2e kast</li>
+      <li>Temperatuur controller toevoegen</li>
     </ul>
   <li>Automatisatie</li>
     <ul>
@@ -103,18 +104,22 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
       <li>Light sensor</li>
       <li>Led controller</li>
       <li>Water controller</li>
-      <li>Temperatuur controller</li>
     </ul>
- 
 </ol>
 
 
 ### Projectdefinitie
+<ul>
+  <li> Doelstelling</li>
+  
+</ul>
+
 ## Planning
-- Kanban
-- Sprint per week
-- Elke donderdag
-- Tools : word , github(project kanban)
+<ul>
+  <li>Kanban</li>
+  <li>Sprint per week op donderdag</li>
+  <li>Tools : word , github(project kanban)</li>
+</ul>
 
 
 | Hoofdlijnen |  Datum      | Student    |
@@ -146,31 +151,30 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 | X-Y syteem| 2de semester      |TBD|
 | kast kabelmanagement| 2de semester      |TBD|
 | kast uittesten voor een maand| 2de semester      |TBD|
+
 ## Functioneel design
 
-de bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder na denken)
+De bedoeling van het design is om het zo lang mogelijk te gebruiken....(verder na denken)
 
-
-
-de kast bestaat uit verschillende onderdelen
+De kast bestaat uit verschillende onderdelen
 
 
 <ul>
   <li>Pomp controller</li>
-      De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen zodat er geen algen of andere planten in het water groeien doordat het         water    te lang     heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiken niet om de zoveel tijd manueel de pomp moet aanzetten. Tot nu         toe wordt er gewerkt met een pomp die   manueel wordt aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
+      De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het water te lang heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiker niet om de zoveel tijd manueel de pomp moet aanzetten. Daarnaast is er nog een tweede pomp om de voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien. Ook deze wordt geautomatiseerd en remote aanpasbaar zodat de hoeveelheden voedingstoffen kunnen worden aangepast indien nodig. Tot nu toe werd er gewerkt met een pomp die manueel werd aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
   <li>Led Controller</li>
-      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant.
+      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant gebasseerd op het omgevingslicht gemeten via de light sensor. Deze moet remote aanpasbaar zijn zodat, indien de 'gezondheid'van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code moet gaan aanpassen. 
   <li>Light sensor</li>
-       detecteert of de leds aan of uit moeten.
+       De light sensor detecteert het omgevings licht en geeft dit door aan de led controller. De led controller past de licht sterkte van de led dan aan om de gepaste lux te bekomen. Bijvoorbeeld onze plant moet ten minste 15000 lux krijgen. Als het omgevingslicht dan 10000 lux is zal de light sensor aan de led controller doorgeven dat deze nog 5000 lux moet voorzien. Komt er een wolk voor de zon en daalt de lux zal dit automatisch gecompenseerd worden door de led controller. 
   <li>X-Y systeem</li>
-      Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de         plant die in de     kast wordt geteeld en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant,       het pomp systeem aanpassen indien   nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op       de kast gemonteerd en kan dit bewegen in het XY-     vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
-  <li>Temperatuur sensor?</li>
-      bepaald de temeratuur voor de gepaste plant de gebruiker kan dan de temeratuur bekijken
-  <li>Water sensor?</li>
-      bepaald of er genoeg water is dit stuurt de pomp controller aan
+      Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in de kast wordt geteeld volgroeid is en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem aanpassen indien nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op de kast gemonteerd en kan dit bewegen in het XY-vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
+  <li>Temperatuur sensor</li>
+      De temperatuur sensor meet de omgevings temperatuur. 
+  <li>Water sensor</li>
+      De water sensor bepaald of er genoeg water in de buizen is en stuurt de pompcontroller aan indien dit niet het geval is. Hierdoor is er op elk moment voldoende water aanwezig in de buizen zodat de plant voldoende voeding kan opnemen. 
 </ul>  
 
-Deze onderdelen wordenin het technisch design verder uitgepunt.
+Deze onderdelen worden in het technisch design verder uitgepunt.
 
 
 ## Technisch design
