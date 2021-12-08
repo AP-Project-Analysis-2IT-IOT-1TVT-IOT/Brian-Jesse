@@ -163,13 +163,13 @@ De kast bestaat uit verschillende onderdelen
   <li>Pomp controller</li>
       De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het water te lang heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiker niet om de zoveel tijd manueel de pomp moet aanzetten. Daarnaast is er nog een tweede pomp om de voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien. Ook deze wordt geautomatiseerd en remote aanpasbaar zodat de hoeveelheden voedingstoffen kunnen worden aangepast indien nodig. Tot nu toe werd er gewerkt met een pomp die manueel werd aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
   <li>Led Controller</li>
-      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant gebasseerd op het omgevingslicht gemeten via de light sensor. Deze moet remote aanpasbaar zijn zodat, indien de 'gezondheid'van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code moet gaan aanpassen. 
+      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant gebasseerd op het omgevingslicht gemeten via de light sensor. Deze moet remote aanpasbaar zijn zodat, indien de 'gezondheid'van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code moet gaan aanpassen. Per niveau is er een led controller zodat de leds per niveau kunnen worden aangepast. 
   <li>Light sensor</li>
-       De light sensor detecteert het omgevings licht en geeft dit door aan de led controller. De led controller past de licht sterkte van de led dan aan om de gepaste lux te bekomen. Bijvoorbeeld onze plant moet ten minste 15000 lux krijgen. Als het omgevingslicht dan 10000 lux is zal de light sensor aan de led controller doorgeven dat deze nog 5000 lux moet voorzien. Komt er een wolk voor de zon en daalt de lux zal dit automatisch gecompenseerd worden door de led controller. 
+       De light sensor detecteert het omgevings licht en geeft dit door aan de led controller. De led controller past de licht sterkte van de led dan aan om de gepaste lux te bekomen. Bijvoorbeeld onze plant moet ten minste 15000 lux krijgen. Als het omgevingslicht dan 10000 lux is zal de light sensor aan de led controller doorgeven dat deze nog 5000 lux moet voorzien. Komt er een wolk voor de zon en daalt de lux zal dit automatisch gecompenseerd worden door de led controller. Per niveau is er een light sensor zodat deze de leds van dat enkel dat niveau kan aanpassen.
   <li>X-Y systeem</li>
       Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in de kast wordt geteeld volgroeid is en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem aanpassen indien nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op de kast gemonteerd en kan dit bewegen in het XY-vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
   <li>Temperatuur sensor</li>
-      De temperatuur sensor meet de omgevings temperatuur. 
+      De temperatuur sensor meet de omgevings temperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt meegenomen in de analyse maar zal enkel toegevoegd worden indien er nog tijd over is. Op dit moment zou dit ons te ver afleiden. 
   <li>Water sensor</li>
       De water sensor bepaald of er genoeg water in de buizen is en stuurt de pompcontroller aan indien dit niet het geval is. Hierdoor is er op elk moment voldoende water aanwezig in de buizen zodat de plant voldoende voeding kan opnemen. 
 </ul>  
@@ -398,8 +398,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 | Open-source | Open-source+ professional(betalend) | Open-source |
 | Flows | Entities |  |
 | no API | API |  |
-| Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box
-(Not actively developed Plugin available) |
+| Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box (Not actively developed Plugin available) |
 | Makkelijk om snel data te kunnen verwerken naar een dashboard aan de hand van flows | Eerder gemaakt voor professionele klanten, werkt met verschillende entities voor apparaten en klanten. |  |
 
 => Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
