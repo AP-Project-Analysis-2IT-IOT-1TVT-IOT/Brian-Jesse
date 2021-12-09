@@ -111,7 +111,8 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 ### Projectdefinitie
 <ul>
   <li> Doelstelling</li>
-  
+  <li> Scope</li>
+  <li> Niet in scope</li>
 </ul>
 
 ## Planning
@@ -181,29 +182,29 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
-### kast
+### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
-### kast ontwerp
+### Kast ontwerp
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
 
-documentatie van ontwerp: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast
+Documentatie van ontwerp: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast
 
-### buis support V3
+### Buis support V3
 V3 is momenteel het finale design van onze supports. Na het monteren van de V2's zijn we op enkele problemen gestoten tijdens het monteren van de supports en de buizen. De volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij V2 word V3 ook verticaal geprint en is er nood aan supports.
 - De verbreding van de poten aan de onderkant zorgen ervoor dat tijdens het monteren van de supports aan het hout met vijzen deze makkelijker bereikbaar zijn.
 - De toevoeging van uitsparingen voor M4 moeren in het onderste gedeelte zorgen ervoor dat de moeren in de print vastgezet kunnen worden.
 
 documentatie naar vorige versies : https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
 
-### buis support top
+### Buis support top
 ![image](https://user-images.githubusercontent.com/91600019/144415593-ff1d9519-1c01-4641-bc63-75d436ce7a8c.png)
-### buis support bottom
+### Buis support bottom
 ![image](https://user-images.githubusercontent.com/91600019/144415648-35df6548-4976-4d9e-8b02-2e6f26a9a01a.png)
 
 ### Groeibakje V4
 Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor de groeibakjes. De afmetingen voor de basis en gaten blijven hetzelfde, alleen de opbouw is wat anders. Het model gaat eerste paar 16mm naar boven en dan pas begint die schuin te gaan tot de bovenste offset-plane. Vandaar gaat het schuin zodat de planten hun wortels rechtstreeks in het water groeien. De techniek hiervoor is van een cirkel naar een vierkant die bij een schuine offset plane gemaakt is geweest een daarna loft te gebruiken om ze bij elkaar te verbinden. 
 
-documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
+Documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
 
 ![image](https://user-images.githubusercontent.com/91600019/144416435-30955e32-0042-47d6-a0a0-b1ceff3f6622.png)
 
@@ -214,8 +215,8 @@ documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfar
 | breedte buitenste diameter: 65mm| breedte diameter2: 40mm      |
 || de dikte van de binnenkant: 0.5mm      |
 
-### opsplitsen PCB's
-### blokdiagram 
+### Opsplitsen PCB's
+### Blokdiagram 
 ![image](https://user-images.githubusercontent.com/91600019/144410226-27c9dff8-ce96-48e8-9040-76fee4c9c816.png)
 ### Hardware keuze
 | naam        |voltage(v)   |Stroom(A)   |
@@ -232,24 +233,24 @@ documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfar
 |Bluetooth|-makkelijk<br>-relatief zuinig|-korte afstand<br>-traag<br>-geen security<br>-ondersteund weinig apparaten (max 8)|
 |Bedraad |-Makkelijk op korte afstand<br>-minder kans op externe verstoringen<br>-geen antenne nodig|-niet ideaal voor lange afstand (onoverzichtelijk)<br>-moeilijk uitbreidbaar|
 
-**onze keuze:**
+**Onze keuze:**
 
 - Bedrade communicatie willen we enkel voor zeer korte afstanden gebruiken of indien er geen ander optie is.
 - Draadloze communicatie gaan we gebruiken voor het grootste deel van het project, het geeft ons de meeste uitbreidmogelijkheden en zorgt dat alles overzichtelijk blijft.
 Verder hebben we gekozen voor WIFI. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen werken is dit essentieel.
 
-### voeding keuze
+### Voeding keuze
 
 | Type        |voordelen   |nadelen   |
 | ----------- | ----------- |----------- |
 | Batterij |-draadloos/ordelijk |-moeten opgeladen worden|
 | Bedrade voeding | -makkelijk |-meer bekabeling in de kast|
 
-**onze keuze:**
+**Onze keuze:**
 
 We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo draadloos mogelijk willen bouwen, dus met behulp van batterijen. We voorzien wel steeds een backup aansluiting voor bekabelde voeding.
 
-### baterij keuze
+### Baterij keuze
 
 
 | Type        |Voltage|Max stroom|voordelen   |nadelen   |
@@ -257,7 +258,7 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 | 18650 | 4,2 |4 |-makkelijk<br>-hoge stroom|groot - moet in houder|
 | Lithium Ion batterij (PRT-13854 ROHS) | 3,7 |2,5|-klein/plat<br>-geen houder nodig<br>-voltage dicht bij ESP input voltage|- minder capaciteit|
 
-**onze keuze:**
+**Onze keuze:**
 
 Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
@@ -268,7 +269,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 ![Blokdiagram LEDController](https://user-images.githubusercontent.com/93762886/144409413-384734cd-da02-40d7-85c4-8816499134a5.jpg)
 
-### schema
+### Schema
 
 ### Analyse LichtSensorController
 
@@ -290,7 +291,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
-### schema
+### Schema
 
 ### Analyse PompController
 
@@ -299,7 +300,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 ![Blokdiagram PompController](https://user-images.githubusercontent.com/93762886/144409195-9e36a6c3-2793-4124-bb0b-249a69ca0799.jpg)
 
 
-### schema
+### Schema
 
 ### Analyse TemperatuurSensor
 
@@ -322,7 +323,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
 
-### schema
+### Schema
 
 ### Analyse WaterSensor
 
@@ -330,7 +331,7 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 ![Blokdiagram WaterSensor](https://user-images.githubusercontent.com/93762886/144409496-eb333b6f-0036-42aa-8612-fcc7e833dca4.jpg)
 
-### schema
+### Schema
 
 
 
