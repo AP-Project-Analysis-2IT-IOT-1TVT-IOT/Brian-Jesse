@@ -10,7 +10,9 @@ Maarten Luyts is de productowner en begeleider van het project.
 
 ## Samenvatting
 
-Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. Er wordt verder gebouwd op iteratie vier. 
+Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. Er wordt verder gebouwd op iteratie vier. ![145383026-b739356b-f3d5-4192-96c0-0e5026da0eb9](https://user-images.githubusercontent.com/93762886/145383345-968182ca-8a85-4796-ae1c-0d25fc8c37bb.png)
+
+![145383026-b739356b-f3d5-4192-96c0-0e5026da0eb9](https://user-images.githubusercontent.com/93762886/145383346-025d79fc-255b-43ab-b56f-402e32fd2bbc.png)
 
 Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. 
 
@@ -407,6 +409,10 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 
 ## Beschrijving van de mogelijke interfaces
+
+![image](https://user-images.githubusercontent.com/93762886/145383267-84fa4618-5c70-40b3-9038-eab0ad58dd59.png)
+![image](https://user-images.githubusercontent.com/93762886/145383026-b739356b-f3d5-4192-96c0-0e5026da0eb9.png)
+
 ## Beschrijving van eventuele datamigratie
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 ## Analyse van security en eventuele autorisatierollen
