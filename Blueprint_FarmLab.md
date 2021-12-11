@@ -17,6 +17,8 @@ Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur ku
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 ## Situatie As-Is
 
+![image](https://user-images.githubusercontent.com/93762886/145684680-e2ff9ff1-fcf7-41e9-ae90-25890556e06f.png)
+
 Momenteel wordt er aan de vierde iteratie van het farmlab gewerkt. De documentatie van de vorige groepen zijn hier te vinden:
 
 - https://github.com/jp19-lafa/Documentation/wiki
@@ -74,11 +76,13 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
 In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en geautomatiseerd. 
 
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
-*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README documentatie*
+*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
 
 
 
 ## Situatie To-Be
+
+
 
 In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verder verwerkt. Dit houdt in dat de zes verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. Daarnaast wordt er tijdens iteratie vijf een tweede kast opgebouwd. 
 
