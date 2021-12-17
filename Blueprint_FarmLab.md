@@ -17,7 +17,7 @@ Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur ku
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 ## Situatie As-Is
 
-![image](https://user-images.githubusercontent.com/93762886/145684680-e2ff9ff1-fcf7-41e9-ae90-25890556e06f.png)
+![image](https://user-images.githubusercontent.com/91600019/146584581-bf54abef-6f97-43d4-9fad-d52bca36c18a.png)
 
 Momenteel wordt er aan de vierde iteratie van het farmlab gewerkt. De documentatie van de vorige groepen zijn hier te vinden:
 
@@ -221,7 +221,7 @@ Documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfar
 
 ### Opsplitsen PCB's
 ### Blokdiagram 
-![image](https://user-images.githubusercontent.com/91600019/144410226-27c9dff8-ce96-48e8-9040-76fee4c9c816.png)
+![image](https://user-images.githubusercontent.com/91600019/146584658-a570a248-4655-4b34-bf59-665a1ab68321.png)
 ### Hardware keuze
 | naam        |voltage(v)   |Stroom(A)   |
 | ----------- | ----------- |----------- |
