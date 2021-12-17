@@ -159,9 +159,6 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 ## Functioneel design
 
-![image](https://user-images.githubusercontent.com/93762886/145383267-84fa4618-5c70-40b3-9038-eab0ad58dd59.png)
-![image](https://user-images.githubusercontent.com/93762886/145383026-b739356b-f3d5-4192-96c0-0e5026da0eb9.png)
-
 
 De kast bestaat uit verschillende onderdelen:
 
