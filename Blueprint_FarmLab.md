@@ -271,7 +271,8 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 ### Blok diagram
 
-![Blokdiagram LEDController](https://user-images.githubusercontent.com/93762886/144409413-384734cd-da02-40d7-85c4-8816499134a5.jpg)
+![image](https://user-images.githubusercontent.com/93762886/146596674-86c4eb33-bb84-45f5-ad77-1838b579e433.png)
+
 
 ### Schema
 
@@ -280,7 +281,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 ### Blok diagram
 
-![Blokdiagram LightSensorController](https://user-images.githubusercontent.com/93762886/144409443-323ffeed-b34c-4787-a961-60a1b6e7129b.jpg)
+![image](https://user-images.githubusercontent.com/93762886/146596953-4cd3b872-082f-497e-bc45-81be8b4b6810.png)
 
 
 ### Component keuze
@@ -301,7 +302,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Blok diagram
 
-![Blokdiagram PompController](https://user-images.githubusercontent.com/93762886/144409195-9e36a6c3-2793-4124-bb0b-249a69ca0799.jpg)
+![image](https://user-images.githubusercontent.com/93762886/146596759-c9b9b290-d100-4116-85fe-0a8ebd942137.png)
 
 
 ### Schema
@@ -310,7 +311,8 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Blok diagram
 
-![Blokdiagram TemperatuurSensor](https://user-images.githubusercontent.com/93762886/144409469-23a90a77-6c57-4449-9c3a-1b72775a3237.jpg)
+![image](https://user-images.githubusercontent.com/93762886/146596795-11a86b66-d5fc-4ba8-b295-6c3c20a20310.png)
+
 
 ### Component keuze
 
@@ -333,7 +335,7 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 ### Blok diagram
 
-![Blokdiagram WaterSensor](https://user-images.githubusercontent.com/93762886/144409496-eb333b6f-0036-42aa-8612-fcc7e833dca4.jpg)
+![image](https://user-images.githubusercontent.com/93762886/146596815-d276fc4a-c982-4bb0-b46e-e5be09246907.png)
 
 ### Schema
 
