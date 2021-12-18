@@ -143,19 +143,22 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 ### Gantt schema
 
-![image](https://user-images.githubusercontent.com/91600019/143431525-f699a711-61bb-4028-93d6-db2c1d5af95d.png)
+![1](https://user-images.githubusercontent.com/93762886/146636244-de3198b8-4f22-4d2a-94ac-b14f2a551c3b.png)
+
 
 ## Planning uitvoering (2de semester)
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
-| aanpassen PCB Ledcontroller| 2de semester       |TBD|
-| aanpassen PCB lichtsensor| 2de semester       |TBD|
-| aanpassen PCB temperatuursensor| 2de semester       |TBD|
-| aanpassen PCB watersensor| 2de semester       |TBD|
-| checken pomp controller| 2de semester       |TBD|
+| Aanpassen PCB Ledcontroller| 2de semester       |TBD|
+| Aanpassen PCB lichtsensor| 2de semester       |TBD|
+| Aanpassen PCB temperatuursensor| 2de semester       |TBD|
+| Aanpassen PCB watersensor| 2de semester       |TBD|
+| Checken pomp controller| 2de semester       |TBD|
 | X-Y syteem| 2de semester      |TBD|
-| kast kabelmanagement| 2de semester      |TBD|
-| kast uittesten voor een maand| 2de semester      |TBD|
+| Kast kabelmanagement| 2de semester      |TBD|
+| Kast uittesten voor een maand| 2de semester      |TBD|
+
+![2](https://user-images.githubusercontent.com/93762886/146636251-3aa08084-8e7a-4b77-851d-279c9070424b.png)
 
 ## Functioneel design
 
@@ -278,7 +281,8 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 ### Blok diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146596953-4cd3b872-082f-497e-bc45-81be8b4b6810.png)
+
+![image](https://user-images.githubusercontent.com/93762886/146635731-06a1d4ea-3ac9-4325-9952-2e584d146f77.png)
 
 
 ### Component keuze
@@ -299,7 +303,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Blok diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146596759-c9b9b290-d100-4116-85fe-0a8ebd942137.png)
+![image](https://user-images.githubusercontent.com/93762886/146635735-af66eba1-a324-49e8-a3c7-da7985057465.png)
 
 
 ### Schema
@@ -308,8 +312,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Blok diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146596795-11a86b66-d5fc-4ba8-b295-6c3c20a20310.png)
-
+![image](https://user-images.githubusercontent.com/93762886/146635738-26279df4-065f-4423-9a98-90c0a859eabf.png)
 
 ### Component keuze
 
@@ -332,7 +335,7 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 ### Blok diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146596815-d276fc4a-c982-4bb0-b46e-e5be09246907.png)
+![image](https://user-images.githubusercontent.com/93762886/146635741-02004fb8-8c03-436d-b07f-3328da061efa.png)
 
 ### Schema
 
