@@ -150,8 +150,8 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 | ----------- | ----------- |----------- |
 | Samenvatting| 2 Dec       |Jesse Denaux|
 | As is / To be| 2 Dec      |Jesse Denaux|
-| Functioneel design| 2 dec |Brian Van Campen|
-| Technische design | 9 dec |Brian Van Campen|
+| Functioneel design| 2 dec |Brian Van Campen, Jesse Denaux|
+| Technische design | 9 dec |Brian Van Campen, Jesse Denaux|
 | Beschrijving van mogelijke interfaces | 9 dec|TBD|
 | Beschrijving van eventuele datamigratie | 9 dec |TBD|
 | Beschrijving van eventuele impact op de huidige infrastructuur | 16 dec|TBD|
