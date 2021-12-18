@@ -256,7 +256,6 @@ Documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfar
 | naam        |voltage(v)   |Stroom(A)   |
 | ----------- | ----------- |----------- |
 | Pomp|5|0,9-1,7|
-| Raspbery Pi|5|600mA-1,2|
 | ESP32|3,3|240mA|
 | Stepper Motor driver|12-24|2,5(MAX)|
 | Led strip|12|400mA|
