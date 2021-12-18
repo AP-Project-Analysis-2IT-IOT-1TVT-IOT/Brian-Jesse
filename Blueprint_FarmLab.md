@@ -17,7 +17,7 @@ Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur ku
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 ## Situatie As-Is
 
-![image](https://user-images.githubusercontent.com/91600019/146584581-bf54abef-6f97-43d4-9fad-d52bca36c18a.png)
+![image](https://user-images.githubusercontent.com/93762886/146644024-536fc2b0-0e54-4e88-9590-6fe0a24ce765.png)
 
 Momenteel wordt er aan de vierde iteratie van het farmlab gewerkt. De documentatie van de vorige groepen zijn hier te vinden:
 
@@ -82,7 +82,7 @@ In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en 
 
 ## Situatie To-Be
 
-
+![image](https://user-images.githubusercontent.com/91600019/146584581-bf54abef-6f97-43d4-9fad-d52bca36c18a.png)
 
 In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verbeterd. Dit houdt in dat de zes verschillende componenten waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. Daarnaast wordt er tijdens iteratie vijf een tweede kast opgebouwd. 
 
@@ -127,27 +127,14 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
     <li>Temperatuur sensor systeem a.d.h.v. een ESP32</li>
     <li>Opbouw van 2e kast</li>
     <li>Systeem afstelling voor basilicum</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    
+    <li>Simplistische UI</li>
+    <li>Automatisatie van de verschillende systemen</li>
   </ul>
   <li> Niet in scope</li>
   <ul>
      <li>Systeemspecificaties voor verschillende planten</li>
-     <li></li>
-     <li></li>
-     <li></li>
-     <li></li>
-     <li></li>
-     <li></li>
-     <li></li>
-     <li></li>
+     <li>Back-up systeem voor indien de elektriciteit uitvalt</li>
+     <li>pH controller systeem</li>
   </ul>
 </ul>
 
@@ -181,19 +168,23 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 ## Planning uitvoering (2de semester)
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
-| Aanpassen PCB Ledcontroller| 2de semester       |TBD|
-| Aanpassen PCB lichtsensor| 2de semester       |TBD|
-| Aanpassen PCB temperatuursensor| 2de semester       |TBD|
-| Aanpassen PCB watersensor| 2de semester       |TBD|
-| Checken pomp controller| 2de semester       |TBD|
-| X-Y syteem| 2de semester      |TBD|
-| Kast kabelmanagement| 2de semester      |TBD|
-| Kast uittesten voor een maand| 2de semester      |TBD|
+| Aankoop materiaal | 1e maand | TBD|
+| Aanpassen PCB Ledcontroller| Helft 1e maand tot einde 2e maand  |TBD|
+| Aanpassen PCB lichtsensor| Helft 1e maand tot einde 2e maand |TBD|
+| Aanpassen PCB temperatuursensor| Helft 1e maand tot einde 2e maand |TBD|
+| Aanpassen PCB watersensor| Helft 1e maand tot einde 2e maand |TBD|
+| Checken pomp controller| 2e maand |TBD|
+| X-Y syteem| Helft 1e maand tot einde 2e maand  |TBD|
+| Kast kabelmanagement| Helft 2e maand tot helft 3e maand |TBD|
+| Kast uittesten voor een maand| Helft 3e maand tot einde  |TBD|
+
+### Gantt schema
 
 ![2](https://user-images.githubusercontent.com/93762886/146636251-3aa08084-8e7a-4b77-851d-279c9070424b.png)
 
 ## Functioneel design
 
+De analyse wordt uitgewerkt voor basilicum.
 
 De kast bestaat uit verschillende onderdelen:
 
@@ -201,17 +192,24 @@ De kast bestaat uit verschillende onderdelen:
 <ul>
   <li>Pomp controller</li>
       De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het water te lang heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiker niet om de zoveel tijd manueel de pomp moet aanzetten. Daarnaast is er nog een tweede pomp om de voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien. Ook deze wordt geautomatiseerd en remote aanpasbaar zodat de hoeveelheden voedingstoffen kunnen worden aangepast indien nodig. Tot nu toe werd er gewerkt met een pomp die manueel werd aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
-  <li>Led Controller</li>
-      De led controller moet in staat zijn om het gepaste licht te produceren voor de specifieke plant gebasseerd op het omgevingslicht gemeten via de light sensor. Deze moet remote aanpasbaar zijn zodat, indien de 'gezondheid'van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code moet gaan aanpassen. Per niveau is er een led controller zodat de leds per niveau kunnen worden aangepast. 
+  Basilicum heeft verschillende voedingsstoffen nodig om te kunnen groeien. Kalium en calcium zijn twee voedingswaarden waar basilicum voldoende van moet krijgen. Deze moeten op een 1:1 basis worden gegeven. Daarnaast spelen magnesium en stikstof nog een significante rol. Het magnesium gehalte zou 50 ppm moeten zijn. Aan de hand van de electric conductivity (EC) kan er worden gekeken of de basilicum genoeg voedingsstoffen kan opnemen. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm. De EC zou een waarde tussen 1.6 en 2.2 μS/cm moeten hebben. 
+   <li>Led Controller</li>
+      De led controller moet in staat zijn om het gepaste licht te produceren voor basilicum gebasseerd op het omgevingslicht gemeten via de light sensor. Deze moet remote aanpasbaar zijn zodat, indien de 'gezondheid' van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code moet gaan aanpassen. Per niveau is er een led controller zodat de leds per niveau kunnen worden aangepast. 
+  Basilicum moet een ten minste 14u-16 licht op een dag krijgen. Daarnaast moet het voor minimum 8u donker zijn. In de 14u dat de basilicum licht krijgt moet er een Daily Light Intergral (DLI) van minstens 12 mol/m2 per dag worden overschreden. Met deze twee waarden kan er dan berekend worden hoeveel lux basisilicum moet krijgen en hoeveel lux de led lampen moeten geven. 
+Om van DLI naar lux te kunnen gaan moeten we eerst nog een tussenstap nemen. Dit is de Photosynthetic Photon Flux Density (PPFD). De PPFD is een waarde die aangeeft hoeveel fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht. Dit bevindt zich tussen 400 en 700nm. De PPFD is uitgedrukt in µmol fotonen/m²s. Om zeker te zijn dat de basilicum voor voldoende tijd genoeg licht heeft gekregen gaan we in onze berekeningen rekenen dat de basilicum voor 15u licht krijgt. We weten dat basilicum een PPFD moet hebben tussen de 150 en 300 µmol fotonen/m²s. Bij een PPFD van 225 µmol fotonen/m²s voor 15u verkrijgen we een DLI van 12.15 mol/m2. Omdat dit dicht tegen de minimum grens van onze 12 mol/m2 DLI is beslissen we om voor een PPFD van 250 µmol fotonen/m²s voor 15u te gaan. Dit komt dan uit op een DLI van 13.5 mol/m2. Om gezet naar lux is dit 2818 lux voor een Red + Blue LED met een golflengte van 450 + 650nm. Dit zijn allemaal theoretische waarden. Verder tests moeten uitwijzen of deze waarden ook effectief ideaal zijn voor basilicum. Er kan tijdens het testen van de kast per niveau een andere waarde kunnen worden ingesteld die bereikt moet worden om zo tebekijken welke waarde het meest optimaal is. 
   <li>Light sensor</li>
-       De light sensor detecteert het omgevings licht en geeft dit door aan de led controller. De led controller past de licht sterkte van de led dan aan om de gepaste lux te bekomen. Bijvoorbeeld onze plant moet ten minste 15000 lux krijgen. Als het omgevingslicht dan 10000 lux is zal de light sensor aan de led controller doorgeven dat deze nog 5000 lux moet voorzien. Komt er een wolk voor de zon en daalt de lux zal dit automatisch gecompenseerd worden door de led controller. Per niveau is er een light sensor zodat deze de leds van dat enkel dat niveau kan aanpassen.
+       De light sensor detecteert het omgevings licht en geeft dit door aan de led controller. De led controller past de licht sterkte van de led dan aan om de gepaste lux te bekomen. Indien het omgevings licht 2000 lux is zal de led controller de leds aansturen om de overige 818 lux, indien er gestreefd wordt om een PPFD van 250 µmol fotonen/m²s te bereiken, te geven. 
   <li>X-Y systeem</li>
       Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in de kast wordt geteeld volgroeid is en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem aanpassen indien nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op de kast gemonteerd en kan dit bewegen in het XY-vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
   <li>Temperatuur sensor</li>
-      De temperatuur sensor meet de omgevings temperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt meegenomen in de analyse maar zal enkel toegevoegd worden indien er nog tijd over is. Op dit moment zou dit ons te ver afleiden. 
+      De temperatuur sensor meet de omgevings temperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt meegenomen in de analyse maar zal enkel toegevoegd worden indien er nog tijd over is. De ideale temperatuur om basilicum te laten groeien is tussen de 18 en 21 graden. Daarnaast moet de luchtvochtigheid best rond de 65% blijven maar wel onder de 70%.
   <li>Water sensor</li>
       De water sensor bepaald of er genoeg water in de buizen is en stuurt de pompcontroller aan indien dit niet het geval is. Hierdoor is er op elk moment voldoende water aanwezig in de buizen zodat de plant voldoende voeding kan opnemen. 
-</ul>  
+  <li>pH sensor</li>
+      De pH sensor zorgt ervoor dat de pH waarde van het water optimaal blijft zodat de basilicum kan blijven groeien. Een pH waarde tussen de 5.5 en 6.5 is ideaal voor basilicum.
+</ul> 
+
+Referenties..
 
 Deze onderdelen worden in het technisch design verder uitgepunt.
 
