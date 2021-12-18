@@ -115,8 +115,40 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 ### Projectdefinitie
 <ul>
   <li> Doelstelling</li>
+  Het doel van iteratie 5 van het farmlab is om geen Raspberry Pi of NodeMCU's te gebruiken maar deze te vervangen door ESP32's. Daarnaast wordt er een XY systeem gebouwd met een beweegbare camera en wordt er gebruik gemaakt van Node-Red. 
   <li> Scope</li>
+  <ul>
+    <li>AI aan XY-systeem toevoegen voor plant herkenning</li>
+    <li>Temperatuur sensor toevoegen </li>
+    <li>Pompcontroller systeem a.d.h.v. een ESP32</li>
+    <li>Light sensor systeem a.d.h.v. een ESP32</li>
+    <li>Led controller systeem a.d.h.v. een ESP32</li>
+    <li>Water controller systeem a.d.h.v. een ESP32</li>
+    <li>Temperatuur sensor systeem a.d.h.v. een ESP32</li>
+    <li>Opbouw van 2e kast</li>
+    <li>Systeem afstelling voor basilicum</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    
+  </ul>
   <li> Niet in scope</li>
+  <ul>
+     <li>Systeemspecificaties voor verschillende planten</li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+  </ul>
 </ul>
 
 ## Planning
