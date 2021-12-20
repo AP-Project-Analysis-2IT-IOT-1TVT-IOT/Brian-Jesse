@@ -196,6 +196,9 @@ specifieke sensor of controller. Er kunnen zo kleine fouten worden opgelost die 
 
 ## Functioneel design
 
+![DFD](https://user-images.githubusercontent.com/93762886/146795045-ac3a64b3-80fb-477b-823e-1c47a1c239ee.jpg)
+![DFD Data dictionary](https://user-images.githubusercontent.com/93762886/146795055-6e402e86-6a38-4a36-b59b-21eeb7be4c72.jpg)
+
 De analyse wordt uitgewerkt voor basilicum. Basilicum is een kruid dat op een relatief gemakkelijke manier in een diepwatercultuur kan worden geteeld.
 
 De kast bestaat uit verschillende onderdelen:
