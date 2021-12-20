@@ -142,27 +142,28 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
   </ul>
 </ul>
 
-## Planning
+## Planning (1e semester)
+
 <ul>
   <li>Kanban</li>
   <li>Sprint per week op donderdag</li>
   <li>Tools : word , github(project kanban)</li>
-</ul>
+</ul><br>
 
 
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
-| Samenvatting| 2 Dec       |Jesse Denaux|
-| As is / To be| 2 Dec      |Jesse Denaux|
-| Functioneel design| 2 dec |Brian Van Campen, Jesse Denaux|
-| Technische design | 9 dec |Brian Van Campen, Jesse Denaux|
+| As is / To be| 2 Dec      |Jesse|
+| Functioneel design| 2 dec |Brian, Jesse|
+| Technische design | 9 dec |Brian, Jesse |
 | Beschrijving van mogelijke interfaces | 9 dec|TBD|
 | Beschrijving van eventuele datamigratie | 9 dec |TBD|
 | Beschrijving van eventuele impact op de huidige infrastructuur | 16 dec|TBD|
 | Analyse van security en eventuele autorisatierollen | 16 dec|TBD|
 | Uitvoering planning | 23 dec|TBD|
 | Documentatie | 23 dec|TBD|
-| Bronvermelding | altijd|Brian en Jesse|
+| Samenvatting| 23 dec |Jesse Denaux|
+| Bronvermelding | altijd |Brian en Jesse|
 
 ### Gantt schema
 
@@ -170,6 +171,13 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 
 ## Planning uitvoering (2de semester)
+
+De uitvoering begint met de aankoop van het desbetreffende materiaal. Dit gebeurd al helemaal in het begin om rekening te houden met levertijden die enige tijd kunnen duren. 
+Tijdens de bestelling kunnen de verschillende sensoren en controllers al worden aangepast en geoptimaliseerd. Daarnaast kunnen de problemen van de vierde versie worden bekeken 
+en opgelost indien dit al mogelijk is. 
+Nadat er een sensor of controller is aangepast moet deze al direct worden getest. Op deze manier kan er, mocht er probleem optreden, een oplossing worden gezocht voor de 
+specifieke sensor of controller. Er kunnen zo kleine fouten worden opgelost die tijdens het testen van de kast voor serieuze problemen kunnen zorgen. 
+
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
 | Aankoop materiaal | 1e maand | TBD|
@@ -191,7 +199,6 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 De analyse wordt uitgewerkt voor basilicum. Basilicum is een kruid dat op een relatief gemakkelijke manier in een diepwatercultuur kan worden geteeld.
 
 De kast bestaat uit verschillende onderdelen:
-
 
 <ul>
   <li>Pompcontroller</li>
