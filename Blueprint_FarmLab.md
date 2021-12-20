@@ -257,7 +257,7 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
-#### Kast
+### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
 #### Kast ontwerp
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
@@ -294,7 +294,7 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 | Breedte buitenste diameter: 65mm| Breedte diameter2: 40mm      |
 || De dikte van de binnenkant: 0.5mm      |
 
-#### Opsplitsen PCB's
+### Opsplitsen PCB's
 #### Block diagram 
 ![image](https://user-images.githubusercontent.com/91600019/146584658-a570a248-4655-4b34-bf59-665a1ab68321.png)
 #### Hardware keuze
@@ -347,17 +347,17 @@ de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algemeen
 ### Analyse LED-controller
 
-### Block diagram
+#### Block diagram
 
 ![Blokdiagram LEDController](https://user-images.githubusercontent.com/93762886/146789989-b789e21c-0e1a-409e-8a06-b4f92fecd776.jpg)
 
 
-### Schema
+#### Schema
 
-### Analyse Lichtsensor controller
+#### Analyse Lichtsensor controller
 
 
-### Block diagram
+#### Block diagram
 
 
 ![Blokdiagram LightSensorController](https://user-images.githubusercontent.com/93762886/146790009-a216257d-a8ad-4b86-aeea-4f95ca419127.jpg)
