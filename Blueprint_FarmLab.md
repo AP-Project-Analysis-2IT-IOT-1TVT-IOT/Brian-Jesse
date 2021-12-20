@@ -2,7 +2,7 @@
 
 
 
-AP Hogeschool<br>
+AP Hogeschool <br>
 Brian Van Campen en Jesse Denaux
 
 ## Opdrachtgever
@@ -12,7 +12,7 @@ Maarten Luyts is de productowner en begeleider van het project.
 
 Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. Er wordt verder gebouwd op iteratie vier. 
 
-Het farmlab is een kast van 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in 
+Het farmlab is een kast met 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in 
 water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. 
 
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
@@ -103,14 +103,14 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
       <li>Node Red</li>
       <li>User input</li>
       <li>Tweede pomp voor voedingsstoffen</li>
-      <li>XY systeem</li>
+      <li>XY-systeem</li>
     </ul>
   <li>PCB's herwerken naar ESP32</li>
     <ul>
-      <li>Pomp Controller</li>
-      <li>Light sensor</li>
-      <li>Led controller</li>
-      <li>Water controller</li>
+      <li>Pompcontroller</li>
+      <li>Lichtsensor</li>
+      <li>LED-controller</li>
+      <li>Watercontroller</li>
     </ul>
 </ol>
 
@@ -125,9 +125,9 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
     <li>AI aan XY-systeem toevoegen voor plant herkenning</li>
     <li>Temperatuur sensor toevoegen </li>
     <li>Pompcontroller systeem a.d.h.v. een ESP32</li>
-    <li>Light sensor systeem a.d.h.v. een ESP32</li>
-    <li>Led controller systeem a.d.h.v. een ESP32</li>
-    <li>Water controller systeem a.d.h.v. een ESP32</li>
+    <li>Lichtsensor systeem a.d.h.v. een ESP32</li>
+    <li>LED-controller systeem a.d.h.v. een ESP32</li>
+    <li>Watercontroller systeem a.d.h.v. een ESP32</li>
     <li>Temperatuur sensor systeem a.d.h.v. een ESP32</li>
     <li>Opbouw van 2e kast</li>
     <li>Systeem afstelling voor basilicum</li>
@@ -138,7 +138,7 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
   <ul>
      <li>Systeemspecificaties voor verschillende planten</li>
      <li>Back-up systeem voor indien de elektriciteit uitvalt</li>
-     <li>pH controller systeem</li>
+     <li>pH-controller</li>
   </ul>
 </ul>
 
@@ -159,10 +159,10 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 | Beschrijving van mogelijke interfaces | 9 dec|TBD|
 | Beschrijving van eventuele datamigratie | 9 dec |TBD|
 | Beschrijving van eventuele impact op de huidige infrastructuur | 16 dec|TBD|
-|Analyse van security en eventuele autorisatierollen | 16 dec|TBD|
-|uitvoering planning | 23 dec|TBD|
-|Documentatie | 23 dec|TBD|
-|Bronvermelding | altijd|Brian en Jesse|
+| Analyse van security en eventuele autorisatierollen | 16 dec|TBD|
+| Uitvoering planning | 23 dec|TBD|
+| Documentatie | 23 dec|TBD|
+| Bronvermelding | altijd|Brian en Jesse|
 
 ### Gantt schema
 
@@ -173,12 +173,12 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
 | Aankoop materiaal | 1e maand | TBD|
-| Aanpassen PCB Ledcontroller| Helft 1e maand tot einde 2e maand  |TBD|
+| Aanpassen PCB LED-controller| Helft 1e maand tot einde 2e maand  |TBD|
 | Aanpassen PCB lichtsensor| Helft 1e maand tot einde 2e maand |TBD|
 | Aanpassen PCB temperatuursensor| Helft 1e maand tot einde 2e maand |TBD|
 | Aanpassen PCB watersensor| Helft 1e maand tot einde 2e maand |TBD|
 | Checken pomp controller| 2e maand |TBD|
-| X-Y syteem| Helft 1e maand tot einde 2e maand  |TBD|
+| XY-syteem| Helft 1e maand tot einde 2e maand  |TBD|
 | Kast kabelmanagement| Helft 2e maand tot helft 3e maand |TBD|
 | Kast uittesten voor een maand| Helft 3e maand tot einde  |TBD|
 
@@ -188,14 +188,14 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 ## Functioneel design
 
-De analyse wordt uitgewerkt voor basilicum.
+De analyse wordt uitgewerkt voor basilicum. Basilicum is een kruid dat op een relatief gemakkelijke manier in een diepwatercultuur kan worden geteeld.
 
 De kast bestaat uit verschillende onderdelen:
 
 
 <ul>
-  <li>Pomp controller</li>
-      De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het
+  <li>Pompcontroller</li>
+      De pompcontroller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het
   water te lang heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiker niet om de zoveel tijd manueel de pomp moet aanzetten. Daarnaast is er nog een tweede 
   pomp om de voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien. Ook deze wordt geautomatiseerd en remote aanpasbaar zodat de hoeveelheden 
   voedingstoffen kunnen worden aangepast indien nodig. Tot nu toe werd er gewerkt met een pomp die manueel werd aangestuurd en zitten ze in het proces om te kijken of al de 
@@ -204,12 +204,12 @@ De kast bestaat uit verschillende onderdelen:
   een 1:1 basis worden gegeven. Daarnaast spelen magnesium en stikstof nog een significante rol. Het magnesium gehalte zou 50 ppm moeten zijn. Aan de hand van de electric 
   conductivity (EC) kan er worden gekeken of de basilicum genoeg voedingsstoffen kan opnemen. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm. De EC 
   zou een waarde tussen 1.6 en 2.2 μS/cm moeten hebben. 
-   <li>Led Controller</li>
-      De led controller moet in staat zijn om het gepaste licht te produceren voor basilicum gebasseerd op het omgevingslicht gemeten via de light sensor. Deze moet remote 
+   <li>LED-Controller</li>
+      De LED-controller moet in staat zijn om het gepaste licht te produceren voor basilicum gebasseerd op het omgevingslicht gemeten via de licht sensor. Deze moet remote 
   aanpasbaar zijn zodat, indien de 'gezondheid' van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code 
-  moet gaan aanpassen. Per niveau is er een led controller zodat de leds per niveau kunnen worden aangepast. 
+  moet gaan aanpassen. Per niveau is er een LED-controller zodat de LED's per niveau kunnen worden aangepast. 
   Basilicum moet een ten minste 14u-16 licht op een dag krijgen. Daarnaast moet het voor minimum 8u donker zijn. In de 14u dat de basilicum licht krijgt moet er een Daily Light 
-  Intergral (DLI) van minstens 12 mol/m2 per dag worden overschreden. Met deze twee waarden kan er dan berekend worden hoeveel lux basisilicum moet krijgen en hoeveel lux de led 
+  Intergral (DLI) van minstens 12 mol/m2 per dag worden overschreden. Met deze twee waarden kan er dan berekend worden hoeveel lux basisilicum moet krijgen en hoeveel lux de LED 
   lampen moeten geven. 
   Om van DLI naar lux te kunnen gaan moeten we eerst nog een tussenstap nemen. Dit is de Photosynthetic Photon Flux Density (PPFD). De PPFD is een waarde die aangeeft hoeveel 
   fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht. Dit bevindt zich tussen 400 en 700nm. De PPFD is uitgedrukt in µmol fotonen/m²s. Om 
@@ -219,24 +219,24 @@ De kast bestaat uit verschillende onderdelen:
   naar lux is dit 2818 lux voor een Red + Blue LED met een golflengte van 450 + 650nm. Dit zijn allemaal theoretische waarden. Verder tests moeten uitwijzen of deze waarden ook 
   effectief ideaal zijn voor basilicum. Er kan tijdens het testen van de kast per niveau een andere waarde kunnen worden ingesteld die bereikt moet worden om zo tebekijken welke 
   waarde het meest optimaal is. 
-  <li>Light sensor</li>
-       De light sensor detecteert het omgevings licht en geeft dit door aan de led controller. De led controller past de licht sterkte van de led dan aan om de gepaste lux te 
-  bekomen. Indien het omgevings licht 2000 lux is zal de led controller de leds aansturen om de overige 818 lux, indien er gestreefd wordt om een PPFD van 250 µmol fotonen/m²s 
+  <li>Lichtsensor</li>
+       De lichtsensor detecteert het omgevings licht en geeft dit door aan de LED-controller. De LED-controller past de licht sterkte van de LED dan aan om de gepaste lux te 
+  bekomen. Indien het omgevings licht 2000 lux is zal de LED controller de LED's aansturen om de overige 818 lux, indien er gestreefd wordt om een PPFD van 250 µmol fotonen/m²s 
   te bereiken, te geven. 
-  <li>X-Y systeem</li>
-      Het XY systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in 
-  de kast wordt geteeld volgroeid is en deze dan met het XY systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem 
-  aanpassen indien nodig alsook de belichting. Het XY systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY systeem op de kast gemonteerd en kan dit 
+  <li>XY-systeem</li>
+      Het XY-systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in 
+  de kast wordt geteeld volgroeid is en deze dan met het XY-systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem 
+  aanpassen indien nodig alsook de belichting. Het XY-systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY-systeem op de kast gemonteerd en kan dit 
   bewegen in het XY-vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
-  <li>Temperatuur sensor</li>
-      De temperatuur sensor meet de omgevings temperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt 
+  <li>Temperatuursensor</li>
+      De temperatuursensor meet de omgevingstemperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt 
   meegenomen in de analyse maar zal enkel toegevoegd worden indien er nog tijd over is. De ideale temperatuur om basilicum te laten groeien is tussen de 18 en 21 graden. 
   Daarnaast moet de luchtvochtigheid best rond de 65% blijven maar wel onder de 70%.
-  <li>Water sensor</li>
+  <li>Watersensor</li>
       De water sensor bepaald of er genoeg water in de buizen is en stuurt de pompcontroller aan indien dit niet het geval is. Hierdoor is er op elk moment voldoende water 
   aanwezig in de buizen zodat de plant voldoende voeding kan opnemen. 
-  <li>pH sensor</li>
-      De pH sensor zorgt ervoor dat de pH waarde van het water optimaal blijft zodat de basilicum kan blijven groeien. Een pH waarde tussen de 5.5 en 6.5 is ideaal voor 
+  <li>pH-sensor</li>
+      De pH-sensor zorgt ervoor dat de pH waarde van het water optimaal blijft zodat de basilicum kan blijven groeien. Een pH-waarde tussen de 5.5 en 6.5 is ideaal voor 
   basilicum.
 </ul> 
 
@@ -285,7 +285,7 @@ Documentatie naar vorgige versies :https://ap-it-gh.github.io/ssys21-docs-labfar
 || de dikte van de binnenkant: 0.5mm      |
 
 ### Opsplitsen PCB's
-### Blokdiagram 
+### Block diagram 
 ![image](https://user-images.githubusercontent.com/91600019/146584658-a570a248-4655-4b34-bf59-665a1ab68321.png)
 ### Hardware keuze
 | naam        |voltage(v)   |Stroom(A)   |
@@ -333,7 +333,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 
 ### Analyse LEDController
 
-### Blok diagram
+### Block diagram
 
 ![image](https://user-images.githubusercontent.com/93762886/146596674-86c4eb33-bb84-45f5-ad77-1838b579e433.png)
 
@@ -343,7 +343,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 ### Analyse LichtSensorController
 
 
-### Blok diagram
+### Block diagram
 
 
 ![image](https://user-images.githubusercontent.com/93762886/146635731-06a1d4ea-3ac9-4325-9952-2e584d146f77.png)
@@ -365,7 +365,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Analyse PompController
 
-### Blok diagram
+### Block diagram
 
 ![image](https://user-images.githubusercontent.com/93762886/146635735-af66eba1-a324-49e8-a3c7-da7985057465.png)
 
@@ -374,7 +374,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Analyse TemperatuurSensor
 
-### Blok diagram
+### Block diagram
 
 ![image](https://user-images.githubusercontent.com/93762886/146635738-26279df4-065f-4423-9a98-90c0a859eabf.png)
 
@@ -397,7 +397,7 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 ### Analyse WaterSensor
 
-### Blok diagram
+### Block diagram
 
 ![image](https://user-images.githubusercontent.com/93762886/146635741-02004fb8-8c03-436d-b07f-3328da061efa.png)
 
