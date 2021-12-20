@@ -257,14 +257,14 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
-### Kast
+#### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
-### Kast ontwerp
+#### Kast ontwerp
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
 
 Documentatie van ontwerp: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast
 
-### Buis support V3
+#### Buis support V3
 V3 is momenteel het finale design van de supports. Na het monteren van de V2's zijn er enkele problemen opgedoken tijdens het monteren van de supports en de buizen. De 
 volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij V2 wordt V3 ook verticaal geprint en is er nood aan supports.
 - De verbreding van de poten aan de onderkant zorgen ervoor dat tijdens het monteren van de supports aan het hout met vijzen deze makkelijker bereikbaar zijn.
@@ -272,12 +272,12 @@ volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij
 
 Documentatie naar vorige versies : https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
 
-### Buis support top
+#### Buis support top
 ![image](https://user-images.githubusercontent.com/91600019/144415593-ff1d9519-1c01-4641-bc63-75d436ce7a8c.png)
-### Buis support bottom
+#### Buis support bottom
 ![image](https://user-images.githubusercontent.com/91600019/144415648-35df6548-4976-4d9e-8b02-2e6f26a9a01a.png)
 
-### Groeibakje V4
+#### Groeibakje V4
 Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor de groeibakjes. De afmetingen voor de basis en gaten blijven hetzelfde, alleen de opbouw is wat 
 anders. Het model gaat eerste 16mm naar boven en dan pas begint deze schuin te gaan tot de bovenste offset-plane. Vandaar gaat het schuin zodat de planten hun wortels 
 rechtstreeks in het water groeien. De techniek hiervoor is van een cirkel naar een vierkant die bij een schuine offset plane gemaakt is geweest een daarna loft te gebruiken om 
@@ -294,10 +294,10 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 | Breedte buitenste diameter: 65mm| Breedte diameter2: 40mm      |
 || De dikte van de binnenkant: 0.5mm      |
 
-### Opsplitsen PCB's
-### Block diagram 
+#### Opsplitsen PCB's
+#### Block diagram 
 ![image](https://user-images.githubusercontent.com/91600019/146584658-a570a248-4655-4b34-bf59-665a1ab68321.png)
-### Hardware keuze
+#### Hardware keuze
 | Naam        |Voltage(v)   |Stroom(A)   |
 | ----------- | ----------- |----------- |
 | Pomp|5|0,9-1,7|
@@ -305,7 +305,7 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 | Stepper Motor driver|12-24|2,5(MAX)|
 | LED strip|12|400m|
 
-### Communicatie keuze
+#### Communicatie keuze
 | Type        |Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |
 | Wifi|-groot bereik<br>-makkelijk uitbreidbaar<br>-middelmatige afstand<br>-snel<br>-security instelbaar<br>-connectie naar Raspberry pi server mogelijk |-verbruikt relatief veel energie|
@@ -319,7 +319,7 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 Verder wordt er nog voor WIFI gekozen. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen 
 werken is dit essentieel.
 
-### Voeding keuze
+#### Voeding keuze
 
 | Type        |Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |
@@ -331,7 +331,7 @@ werken is dit essentieel.
 Er wordt voor 'the best of both worlds' gegaan. Dit houdt in dat elke controller zo draadloos mogelijk wordt gebouwd, dus met behulp van batterijen. Er wordt wel steeds een 
 backup aansluiting voor bekabelde voeding voorzien.
 
-### Baterij keuze
+#### Baterij keuze
 
 
 | Type        |Voltage|Max stroom|Voordelen   |Nadelen   |
