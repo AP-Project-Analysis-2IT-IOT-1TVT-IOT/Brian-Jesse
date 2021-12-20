@@ -331,22 +331,22 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
 
-### Analyse LEDController
+### Analyse LED-controller
 
 ### Block diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146596674-86c4eb33-bb84-45f5-ad77-1838b579e433.png)
+![Blokdiagram LEDController](https://user-images.githubusercontent.com/93762886/146789989-b789e21c-0e1a-409e-8a06-b4f92fecd776.jpg)
 
 
 ### Schema
 
-### Analyse LichtSensorController
+### Analyse Lichtsensor controller
 
 
 ### Block diagram
 
 
-![image](https://user-images.githubusercontent.com/93762886/146635731-06a1d4ea-3ac9-4325-9952-2e584d146f77.png)
+![Blokdiagram LightSensorController](https://user-images.githubusercontent.com/93762886/146790009-a216257d-a8ad-4b86-aeea-4f95ca419127.jpg)
 
 
 ### Component keuze
@@ -363,20 +363,20 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Schema
 
-### Analyse PompController
+### Analyse Pompcontroller
 
 ### Block diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146635735-af66eba1-a324-49e8-a3c7-da7985057465.png)
+![Blokdiagram PompController](https://user-images.githubusercontent.com/93762886/146790059-dca868f2-64c2-4d14-9224-255ea357c7b7.jpg)
 
 
 ### Schema
 
-### Analyse TemperatuurSensor
+### Analyse Temperatuursensor
 
 ### Block diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146635738-26279df4-065f-4423-9a98-90c0a859eabf.png)
+![Blokdiagram TemperatuurSensor](https://user-images.githubusercontent.com/93762886/146790080-e2834bc2-4e09-4845-8594-9444ccc9da03.jpg)
 
 ### Component keuze
 
@@ -395,11 +395,11 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 ### Schema
 
-### Analyse WaterSensor
+### Analyse Watersensor
 
 ### Block diagram
 
-![image](https://user-images.githubusercontent.com/93762886/146635741-02004fb8-8c03-436d-b07f-3328da061efa.png)
+![Blokdiagram WaterSensor](https://user-images.githubusercontent.com/93762886/146790117-51427c5b-35bb-4caa-bdfd-2544fd479dc4.jpg)
 
 ### Schema
 
