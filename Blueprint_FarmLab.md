@@ -470,7 +470,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 | Geen ingebouwde Standaard enkele QoS mogelijkheden| Standardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack|
 | | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
 
-=> Wij gaan gebruik maken van MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
+=>MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
 
 ### IOT Dashboard/Platform
 
@@ -488,12 +488,24 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 | Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box (Not actively developed Plugin available) |
 | Makkelijk om snel data te kunnen verwerken naar een dashboard aan de hand van flows | Eerder gemaakt voor professionele klanten, werkt met verschillende entities voor apparaten en klanten. |  |
 
-=> Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
+=>Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
 
 
 
 
 ## Beschrijving van de mogelijke interfaces
+
+Deze kast maakt gebruik van Node-RED die gaat communniceren met een ESP32 vanuit deze stuurt de gebruiker meerdere ESP32’s aan
+![image](https://user-images.githubusercontent.com/91600019/146913436-9cd7562f-4817-4814-a30e-195f017d2579.png)
+### Node-RED editor
+
+![image](https://user-images.githubusercontent.com/91600019/146913720-16b7405d-04fb-4f1d-abab-c27d51c1804f.png)
+
+
+### WIREFRAME
+![image](https://user-images.githubusercontent.com/91600019/146914556-dccccbfb-ca62-4837-adf1-a2d299452fa5.png)
+### UI
+![image](https://user-images.githubusercontent.com/91600019/146913785-c37c27c9-7c5a-4eb9-8020-5b3c3a8c6749.png)
 
 
 
