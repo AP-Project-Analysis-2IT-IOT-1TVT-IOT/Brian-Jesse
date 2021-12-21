@@ -354,6 +354,8 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algeme
 
 #### Schema
 
+![LED controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973327-589251bf-2576-476a-b7c3-4ce4a7b4b63e.jpg)
+
 #### Analyse Lichtsensor controller
 
 
@@ -377,14 +379,18 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ### Schema
 
+![Lichtsensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973305-43037927-4fb0-42cf-94f0-058ef386ce7e.jpg)
+
+
 ### Analyse Pompcontroller
 
 ### Block diagram
 
 ![Blokdiagram PompController](https://user-images.githubusercontent.com/93762886/146790059-dca868f2-64c2-4d14-9224-255ea357c7b7.jpg)
 
-
 ### Schema
+
+![Pomp controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973356-16f29d0f-c8af-4636-bf06-941dd56c3a2e.jpg)
 
 ### Analyse Temperatuursensor
 
@@ -417,7 +423,7 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 ### Schema
 
-
+![Water sensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973375-6501cada-98cf-4129-93e7-166c8f4067c8.jpg)
 
 ### Smart Object (Software Analyse)
 
