@@ -495,7 +495,9 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 ## Beschrijving van de mogelijke interfaces
 
-Deze kast maakt gebruik van Node-RED die gaat communniceren met een ESP32 vanuit deze stuurt de gebruiker meerdere ESP32’s aan
+Deze kast maakt gebruik van Node-RED die gaat communniceren met een ESP32 vanuit deze stuurt de gebruiker meerdere ESP32’s aan.
+Deze sturen dan de pompen en leds aan
+
 ![image](https://user-images.githubusercontent.com/91600019/146913436-9cd7562f-4817-4814-a30e-195f017d2579.png)
 ### Node-RED editor
 
