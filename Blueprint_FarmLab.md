@@ -518,6 +518,48 @@ Deze sturen dan de pompen en leds aan
 
 
 ## Beschrijving van eventuele datamigratie
+### AD kast process
+
+![image](https://user-images.githubusercontent.com/91600019/147066956-a3d0ed74-8941-4fea-804c-2fcb5c0bae77.png)
+
+
+Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
+Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
+
+<ol>
+  <li>PompController: </li>
+  <ul>
+    <li>NodeRED -> RaspberryPi broker -> ESP32 op pompcontroller:</li>
+    <ul>
+      <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
+      <li>String "on" => Pomp gaat aan</li>
+      <li>String "off" => Pomp gaan uit</li>
+    </ul>
+  </ul>
+  <li>LEDController:  </li>
+  <ul>
+    <li>NodeRED -> RaspberryPi broker -> ESP32 op LEDController:</li>
+    <ul>
+      <li>Topics: farm/x/licht/level/y => y = level 1,2 OF 3</li>
+      <li>String "on" => LED's op level y gaat aan</li>
+      <li>String "off" => LED's op level y gaat uit </li>
+    </ul>
+  </ul>
+  <li>Lichtcontroller: </li>
+  <ul>
+    <li>ESP32 op LichtSensorController -> RaspberryPi broker -> NodeRED</li>
+    <ul>
+      <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
+      <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
+      <li>r worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
+    </ul>
+  </ul>
+</ol>
+
+### Flowchart
+  
+  ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png)
+
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 ## Analyse van security en eventuele autorisatierollen
 ## Documentatie
