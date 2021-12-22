@@ -499,8 +499,8 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 ## Beschrijving van de mogelijke interfaces
 
-Deze kast maakt gebruik van Node-RED die gaat communniceren met een ESP32. Hieruit stuurt de gebruiker meerdere ESP32’s aan.
-Deze sturen dan de pompen en leds aan.
+Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP32. Hieruit worden de verschillende controller/sensor ESP32’s aangestuurd.
+
 
 ![image](https://user-images.githubusercontent.com/91600019/146913436-9cd7562f-4817-4814-a30e-195f017d2579.png)
 ### Node-RED editor
@@ -521,13 +521,13 @@ Deze sturen dan de pompen en leds aan.
 ![image](https://user-images.githubusercontent.com/91600019/147104600-7d85d4cf-060c-4ba8-a8ce-9e306cfcad30.png)
 
 
-Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
+Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
 Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 <ol>
   <li>PompController: </li>
   <ul>
-    <li>NodeRED -> RaspberryPi broker -> ESP32 op pompcontroller:</li>
+    <li>NodeRED -> ESP32 -> ESP32 op pompcontroller:</li>
     <ul>
       <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
       <li>String "on" => Pomp gaat aan</li>
@@ -536,7 +536,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
   <li>LEDController:  </li>
   <ul>
-    <li>NodeRED -> RaspberryPi broker -> ESP32 op LEDController:</li>
+    <li>NodeRED -> ESP32 -> ESP32 op LEDController:</li>
     <ul>
       <li>Topics: farm/x/licht/level/y => y = level 1,2 OF 3</li>
       <li>String "on" => LED's op level y gaat aan</li>
@@ -545,11 +545,11 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
   <li>Lichtcontroller: </li>
   <ul>
-    <li>ESP32 op LichtSensorController -> RaspberryPi broker -> NodeRED</li>
+    <li>ESP32 op LichtSensorController -> ESP32 -> NodeRED</li>
     <ul>
       <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
       <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
-      <li>r worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
+      <li>Er worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
     </ul>
   </ul>
 </ol>
@@ -559,6 +559,11 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png)
 
 ## Beschrijving van eventuele impact op de huidige infrastructuur
+
+Het is mogelijk om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan in de cloud. Enkele clouds die compatibel zijn met Node-red zijn IBM cloud, 
+SenseTecnic FRED, Amazon Web Services en Microsoft Azure. 
+Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken. 
 ## Analyse van security en eventuele autorisatierollen
+
 ## Documentatie
 ## Bronvermelding
