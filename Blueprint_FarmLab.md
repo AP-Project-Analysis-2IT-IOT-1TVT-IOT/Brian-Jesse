@@ -516,9 +516,9 @@ Deze sturen dan de pompen en leds aan.
 
 
 ## Beschrijving van eventuele datamigratie
-### Proces kast
+### Proces kast AD
 
-![image](https://user-images.githubusercontent.com/91600019/147066956-a3d0ed74-8941-4fea-804c-2fcb5c0bae77.png)
+![image](https://user-images.githubusercontent.com/91600019/147104600-7d85d4cf-060c-4ba8-a8ce-9e306cfcad30.png)
 
 
 Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
