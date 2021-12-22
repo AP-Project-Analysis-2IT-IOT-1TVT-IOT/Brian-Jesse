@@ -17,7 +17,7 @@ water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier 
 
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 
-* * *
+<div style="page-break-after: always"></div>
 
 ## Situatie As-Is
 
@@ -83,7 +83,7 @@ In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en 
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
 
-
+<div style="page-break-after: always"></div>
 
 ## Situatie To-Be
 
@@ -145,6 +145,7 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
      <li>pH-controller</li>
   </ul>
 </ul>
+<div style="page-break-after: always"></div>
 
 ## Planning (1e semester)
 
@@ -169,10 +170,13 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 | Samenvatting| 23 dec |Jesse Denaux|
 | Bronvermelding | Continue |Brian en Jesse|
 
+<div style="page-break-after: always"></div>
+
 ### Gantt schema
 
 ![1](https://user-images.githubusercontent.com/93762886/146636244-de3198b8-4f22-4d2a-94ac-b14f2a551c3b.png)
 
+<div style="page-break-after: always"></div>
 
 ## Planning uitvoering (2de semester)
 
@@ -194,9 +198,13 @@ specifieke sensor of controller. Er kunnen zo kleine fouten worden opgelost die 
 | Kast kabelmanagement| Helft 2e maand tot helft 3e maand |TBD|
 | Kast uittesten voor een maand| Helft 3e maand tot einde  |TBD|
 
+<div style="page-break-after: always"></div>
+
 ### Gantt schema
 
 ![2](https://user-images.githubusercontent.com/93762886/146636251-3aa08084-8e7a-4b77-851d-279c9070424b.png)
+
+<div style="page-break-after: always"></div>
 
 ## Functioneel design
 
@@ -257,11 +265,15 @@ De kast bestaat uit verschillende onderdelen:
 
 Deze onderdelen worden in het technisch design verder uitgepunt.
 
+<div style="page-break-after: always"></div>
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
 ### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
+
+<div style="page-break-after: always"></div>
+
 #### Kast ontwerp
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
 
@@ -280,6 +292,8 @@ Documentatie naar vorige versies : https://ap-it-gh.github.io/ssys21-docs-labfar
 #### Buis support bottom
 ![image](https://user-images.githubusercontent.com/91600019/144415648-35df6548-4976-4d9e-8b02-2e6f26a9a01a.png)
 
+<div style="page-break-after: always"></div>
+
 #### Groeibakje V4
 Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor de groeibakjes. De afmetingen voor de basis en gaten blijven hetzelfde, alleen de opbouw is wat 
 anders. Het model gaat eerste 16mm naar boven en dan pas begint deze schuin te gaan tot de bovenste offset-plane. Vandaar gaat het schuin zodat de planten hun wortels 
@@ -297,6 +311,8 @@ ze bij elkaar te verbinden.
 
 Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
 
+<div style="page-break-after: always"></div>
+
 ### Opsplitsen PCB's
 #### Block diagram 
 ![image](https://user-images.githubusercontent.com/91600019/146584658-a570a248-4655-4b34-bf59-665a1ab68321.png)
@@ -307,6 +323,8 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 | ESP32|3,3|240m|
 | Stepper Motor driver|12-24|2,5(MAX)|
 | LED strip|12|400m|
+
+<div style="page-break-after: always"></div>
 
 #### Communicatie keuze
 | Type        |Voordelen   |Nadelen   |
@@ -321,6 +339,8 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 - Draadloze communicatie gaat er voor het grootste deel van het project gebruikt worden. Het geeft de meeste uitbreidmogelijkheden en zorgt dat alles overzichtelijk blijft.
 Verder wordt er nog voor WIFI gekozen. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen 
 werken is dit essentieel.
+
+<div style="page-break-after: always"></div>
 
 #### Voeding keuze
 
@@ -348,6 +368,9 @@ Aangezien er voor de sensor geen grote capaciteit of vermogen nodig is, wordt er
 de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algemeen
+
+<div style="page-break-after: always"></div>
+
 ### Analyse LED-controller
 
 #### Block diagram
@@ -361,16 +384,15 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algeme
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LedController
 
-#### Analyse Lichtsensor controller
+<div style="page-break-after: always"></div>
 
+#### Analyse Lichtsensor controller
 
 #### Block diagram
 
-
 ![Blokdiagram LightSensorController](https://user-images.githubusercontent.com/93762886/146790009-a216257d-a8ad-4b86-aeea-4f95ca419127.jpg)
 
-
-### Component keuze
+#### Component keuze
 
 | naam        |Min dynamic range (Lux)|Max dynamic range (Lux)|Voeding   |Interface 	   |Prijs|
 | ----------- | ----------- |----------- |----------- |----------- |----------- |
@@ -379,35 +401,39 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LedController
 | [TSL2591](https://shop.mchobby.be/en/environnemental-press-temp-hum-gas/1599-tsl2591-sensor-lux-luminosite-lumiere-digital-3232100015999-adafruit.html) | 188µ | 	88000 |3,3-5V | I2C |  	8,69€ |
 |[TSL2591](https://www.kiwi-electronics.nl/nl/si1145-digital-uv-index-ir-visible-light-sensor-1574) | NaN | NaN | 3-5V | I2C | 11,99€ |
 
-
 De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
-### Schema
+<div style="page-break-after: always"></div>
+
+#### Schema
 
 ![Lichtsensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973305-43037927-4fb0-42cf-94f0-058ef386ce7e.jpg)
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LichtSensor
 
+<div style="page-break-after: always"></div>
 
 ### Analyse Pompcontroller
 
-### Block diagram
+#### Block diagram
 
 ![Blokdiagram PompController](https://user-images.githubusercontent.com/93762886/146790059-dca868f2-64c2-4d14-9224-255ea357c7b7.jpg)
 
-### Schema
+#### Schema
 
 ![Pomp controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973356-16f29d0f-c8af-4636-bf06-941dd56c3a2e.jpg)
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/PompController
 
+<div style="page-break-after: always"></div>
+
 ### Analyse Temperatuursensor
 
-### Block diagram
+#### Block diagram
 
 ![Blokdiagram TemperatuurSensor](https://user-images.githubusercontent.com/93762886/146790080-e2834bc2-4e09-4845-8594-9444ccc9da03.jpg)
 
-### Component keuze
+#### Component keuze
 
 
 | naam |min temp (°C)|max temp (°C)|accuraatheid (°C)|min voltage (V)| min voltage (V) |mounting|soort|Prijs|
@@ -422,21 +448,25 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/TemperatuurSensor
 
+<div style="page-break-after: always"></div>
+
 ### Analyse Watersensor
 
-### Block diagram
+#### Block diagram
 
 ![Blokdiagram WaterSensor](https://user-images.githubusercontent.com/93762886/146790117-51427c5b-35bb-4caa-bdfd-2544fd479dc4.jpg)
 
-### Schema
+#### Schema
 
 ![Water sensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973375-6501cada-98cf-4129-93e7-166c8f4067c8.jpg)
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/WaterSensor
 
+<div style="page-break-after: always"></div>
+
 ### Smart Object (Software Analyse)
 
-### Data
+#### Data
 
 Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
 Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
@@ -471,11 +501,13 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
 </ol>
 
-### Flowchart
+<div style="page-break-after: always"></div>
+
+#### Flowchart
   
   ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png)
 
-### Specificaties
+#### Specificaties
 
 | HTTP        |MQTT   |
 | ----------- | ----------- |
@@ -486,6 +518,8 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 | | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
 
 =>MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
+
+<div style="page-break-after: always"></div>
 
 ### IOT Dashboard/Platform
 
@@ -507,6 +541,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Software_analyse/algemeen
 
+<div style="page-break-after: always"></div>
 
 ## Beschrijving van de mogelijke interfaces
 
@@ -514,6 +549,9 @@ Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP
 
 
 ![image](https://user-images.githubusercontent.com/91600019/146913436-9cd7562f-4817-4814-a30e-195f017d2579.png)
+
+<div style="page-break-after: always"></div>
+
 ### Node-RED editor
 
 ![image](https://user-images.githubusercontent.com/91600019/146913720-16b7405d-04fb-4f1d-abab-c27d51c1804f.png)
@@ -525,6 +563,8 @@ Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP
 ![image](https://user-images.githubusercontent.com/91600019/146913785-c37c27c9-7c5a-4eb9-8020-5b3c3a8c6749.png)
 
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/SoftwareGuide
+
+<div style="page-break-after: always"></div>
 
 ## Beschrijving van eventuele datamigratie
 ### Proces kast AD
@@ -565,9 +605,11 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
 </ol>
 
-### Flowchart
+#### Flowchart
   
-  ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png) -->
+![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png) -->
+
+<div style="page-break-after: always"></div>
 
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 
@@ -576,8 +618,9 @@ om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan 
 Amazon Web Services en Microsoft Azure. 
 Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken. 
 
-## Analyse van security en eventuele autorisatierollen
+<div style="page-break-after: always"></div>
 
+## Analyse van security en eventuele autorisatierollen
 
 ### **Voor de Security van dit systeem**
 
@@ -604,6 +647,7 @@ Gebruiker: De gebruiker heeft alleen toegang tot een UI.
 
 Aangezien de kasten alleen in scholen gaan staan zal de school toegang hebben tot deze kasten.
 
+<div style="page-break-after: always"></div>
 
 ## Documentatie
 
@@ -614,6 +658,8 @@ De codes worden voorzien van comments waarin er wordt uitgelegd wat die bepaalde
 zonder grote delen opnieuw te moeten schrijven. <br><br>
 Wanneer de kast volledig operationeel is zal er een handleiding worden aan toegevoegd om uit te leggen hoe alles werkt, waar de gebruiker rekening mee moet houden en wie te 
 contacteren mocht er iets mislopen.
+
+<div style="page-break-after: always"></div>
 
 ## Bronvermelding
 Alger, H. (2021). Hydroponic & Container Basil Guide. Opgehaald van johnnyseeds: https://www.johnnyseeds.com/growers-library/herbs/basil/hydroponic-container-basil-guide.html
