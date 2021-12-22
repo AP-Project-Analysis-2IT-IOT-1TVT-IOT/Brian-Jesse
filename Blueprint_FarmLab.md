@@ -74,7 +74,8 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
   </ul>
 </ol>
 
-In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en geautomatiseerd. 
+In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en geautomatiseerd. (De Gendt et al., 2021)
+
 
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
 *Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
@@ -282,8 +283,6 @@ anders. Het model gaat eerste 16mm naar boven en dan pas begint deze schuin te g
 rechtstreeks in het water groeien. De techniek hiervoor is van een cirkel naar een vierkant die bij een schuine offset plane gemaakt is geweest een daarna loft te gebruiken om 
 ze bij elkaar te verbinden. 
 
-Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
-
 ![image](https://user-images.githubusercontent.com/91600019/144416435-30955e32-0042-47d6-a0a0-b1ceff3f6622.png)
 
 | Ring |  Groeibakje      | 
@@ -292,6 +291,8 @@ Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm
 | Breedte binneste diameter: 60mm| Breedte diameter1: 60mm      |
 | Breedte buitenste diameter: 65mm| Breedte diameter2: 40mm      |
 || De dikte van de binnenkant: 0.5mm      |
+
+Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
 
 ### Opsplitsen PCB's
 #### Block diagram 
@@ -355,6 +356,8 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algeme
 
 ![LED controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973327-589251bf-2576-476a-b7c3-4ce4a7b4b63e.jpg)
 
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LedController
+
 #### Analyse Lichtsensor controller
 
 
@@ -380,6 +383,8 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ![Lichtsensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973305-43037927-4fb0-42cf-94f0-058ef386ce7e.jpg)
 
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LichtSensor
+
 
 ### Analyse Pompcontroller
 
@@ -390,6 +395,8 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 ### Schema
 
 ![Pomp controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973356-16f29d0f-c8af-4636-bf06-941dd56c3a2e.jpg)
+
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/PompController
 
 ### Analyse Temperatuursensor
 
@@ -408,9 +415,9 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 | HIH6130-021-001 | -40 | 125 | 0.5 | 2.3 | 5.5 | thru hole | apart | 8,41 |
 | SHT31-DIS-B | -40 | 125 | 0.2 | 2.15 | 5.5 | SMD reflow | apart | 4,5 |
 
-
-
 De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
+
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/TemperatuurSensor
 
 ### Analyse Watersensor
 
@@ -421,6 +428,8 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 ### Schema
 
 ![Water sensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973375-6501cada-98cf-4129-93e7-166c8f4067c8.jpg)
+
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/WaterSensor
 
 ### Smart Object (Software Analyse)
 
@@ -493,7 +502,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 =>Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
 
-
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Software_analyse/algemeen
 
 
 ## Beschrijving van de mogelijke interfaces
@@ -512,15 +521,15 @@ Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP
 ### UI
 ![image](https://user-images.githubusercontent.com/91600019/146913785-c37c27c9-7c5a-4eb9-8020-5b3c3a8c6749.png)
 
-
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/SoftwareGuide
 
 ## Beschrijving van eventuele datamigratie
 ### Proces kast AD
 
 ![image](https://user-images.githubusercontent.com/91600019/147104600-7d85d4cf-060c-4ba8-a8ce-9e306cfcad30.png)
 
-
-Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
+<!-- 
+Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's. 
 Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 <ol>
@@ -555,13 +564,14 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 ### Flowchart
   
-  ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png)
+  ![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png) -->
 
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 
 Het is mogelijk om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan in de cloud. Enkele clouds die compatibel zijn met Node-red zijn IBM cloud, 
 SenseTecnic FRED, Amazon Web Services en Microsoft Azure. 
 Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken. 
+
 ## Analyse van security en eventuele autorisatierollen
 
 ## Documentatie
@@ -573,6 +583,7 @@ zonder grote delen opnieuw te moeten schrijven.
 
 ## Bronvermelding
 Alger, H. (2021). Hydroponic & Container Basil Guide. Opgehaald van johnnyseeds: https://www.johnnyseeds.com/growers-library/herbs/basil/hydroponic-container-basil-guide.html
+<br>De Gendt, W., Leenaerts, L., & Davalos, A. (2021, september 21). Farmlab. Opgehaald van Github: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/
 <br>Deepak, Y. (2020, september 6). Fundamentals of Growing Basil in Hydroponics. Opgehaald van Barton Breeze: https://www.bartonbreeze.com/post/fundamentals-of-growing-basil-in-hydroponics
 <br>Deepak, Y. (2021, juli 11). How to use Nutrient Film Technique in Hydroponic Gardens? Opgehaald van Barton Breeze: https://www.bartonbreeze.com/post/how-to-use-nutrient-film-technique-in-hydroponic-gardens
 <br>Gillespie, D. (2019, Maart). Influence of nutrient solution pH on hydroponic basil (Ocimum basilicum) plant growth. Opgehaald van Knowledge Bank: 
