@@ -575,6 +575,31 @@ Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken.
 
 ## Analyse van security en eventuele autorisatierollen
 
+
+Voor de Security van dit systeem : Omdat we werken met ESP32’s zal de gebruiker moeten verbinden op een netwerk met een wachtwoord (hotspot).
+Vervolgens zal de cloud beveiligd zijn met een naam en wachtwoord.
+
+**Rollen :**
+
+Admin: kan alles aanpassen
+-	Wachtwoord
+-	Gebruikersnaam
+-	kast
+-	code
+Gebruiker: De gebruiker heeft alleen toegang tot een UI
+-	waardes
+-	knoppen
+-	kast 
+
+
+
+**Privacy**
+
+Aangezien de kasten alleen in scholen gaan staan zal de school toegang hebben tot deze kasten.
+
+
+
+
 ## Documentatie
 
 De documentie zal te vinden zijn op github. Indien er aanpassingen aan het project gebeuren zullen deze steeds in de repo worden toegevoegd. Hierdoor kunnen toekomstige 
