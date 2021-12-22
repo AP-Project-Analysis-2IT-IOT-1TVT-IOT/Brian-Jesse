@@ -578,10 +578,11 @@ Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken.
 
 ### **Voor de Security van dit systeem**
 
-Omdat we werken met ESP32’s zal de gebruiker moeten verbinden op een netwerk met een wachtwoord (hotspot).
+Omdat we werken met ESP32’s zal de gebruiker moeten verbinden op een netwerk met een wachtwoord. 
 Vervolgens zal de cloud beveiligd zijn met een naam en wachtwoord.
+Zie dat er steeds een sterk wachtwoord wordt gebruikt. Dit houdt in dat het wachtwoord ten minste 12 karakters lang is, random en uniek is en een combinatie van grote en kleine letters, nummers speciale symbolen en leestekens. 
 
-### **autorisatierollen**
+### **Autorisatierollen**
 
 Admin: kan alles aanpassen.
 -	Wachtwoord
@@ -601,14 +602,15 @@ Gebruiker: De gebruiker heeft alleen toegang tot een UI.
 Aangezien de kasten alleen in scholen gaan staan zal de school toegang hebben tot deze kasten.
 
 
-
-
 ## Documentatie
 
 De documentie zal te vinden zijn op github. Indien er aanpassingen aan het project gebeuren zullen deze steeds in de repo worden toegevoegd. Hierdoor kunnen toekomstige 
-iteraties steeds verder bouwen op deze documentatie en wordt er vermeden dat er dubbel werk wordt gedaan. <br><br>
+iteraties steeds verder bouwen op deze documentatie en wordt er vermeden dat er dubbel werk wordt gedaan. In de bronvermelding zijn ook de github repo's van vorige iteraties 
+terug te vinden.<br><br>
 De codes worden voorzien van comments waarin er wordt uitgelegd wat die bepaalde code delen betekenen. Hierdoor kan er gemakkelijk worden voortgebouwd op al bestaande code 
-zonder grote delen opnieuw te moeten schrijven.
+zonder grote delen opnieuw te moeten schrijven. <br><br>
+Wanneer de kast volledig operationeel is zal er een handleiding worden aan toegevoegd om uit te leggen hoe alles werkt, waar de gebruiker rekening mee moet houden en wie te 
+contacteren mocht er iets mislopen.
 
 ## Bronvermelding
 Alger, H. (2021). Hydroponic & Container Basil Guide. Opgehaald van johnnyseeds: https://www.johnnyseeds.com/growers-library/herbs/basil/hydroponic-container-basil-guide.html
