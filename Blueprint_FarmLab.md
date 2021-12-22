@@ -16,6 +16,9 @@ Het farmlab is een kast met 3 niveau’s waarbij planten als een hydrocultuur ku
 water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. 
 
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
+
+* * *
+
 ## Situatie As-Is
 
 ![image](https://user-images.githubusercontent.com/93762886/146644024-536fc2b0-0e54-4e88-9590-6fe0a24ce765.png)
