@@ -568,8 +568,9 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 
-Het is mogelijk om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan in de cloud. Enkele clouds die compatibel zijn met Node-red zijn IBM cloud, 
-SenseTecnic FRED, Amazon Web Services en Microsoft Azure. 
+Om communicatie tussen de verschillende ESP32's te voorzien is het noodzakelijk om een lokaal netwerk te hebben waar de ESP32's mee kunnen verbinden. Daarnaast is het mogelijk 
+om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan in de cloud. Enkele clouds die compatibel zijn met Node-red zijn IBM cloud, SenseTecnic FRED, 
+Amazon Web Services en Microsoft Azure. 
 Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken. 
 
 ## Analyse van security en eventuele autorisatierollen
