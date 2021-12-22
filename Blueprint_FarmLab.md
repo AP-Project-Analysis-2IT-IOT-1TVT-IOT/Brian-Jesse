@@ -213,14 +213,14 @@ De kast bestaat uit verschillende onderdelen:
   Basilicum heeft verschillende voedingsstoffen nodig om te kunnen groeien. Kalium en calcium zijn twee voedingswaarden waar basilicum voldoende van moet krijgen. Deze moeten op 
   een 1:1 basis worden gegeven. Daarnaast spelen magnesium en stikstof nog een significante rol. Het magnesium gehalte zou 50 ppm moeten zijn. Aan de hand van de electric 
   conductivity (EC) kan er worden gekeken of de basilicum genoeg voedingsstoffen kan opnemen. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm. De EC 
-  zou een waarde tussen 1.6 en 2.2 μS/cm moeten hebben. 
+  zou een waarde tussen 1.6 en 2.2 μS/cm moeten hebben. (Miller, 2020; Smith, 2021; Deepak, 2020; Sandy, 2021)
    <li>LED-Controller</li>
       De LED-controller moet in staat zijn om het gepaste licht te produceren voor basilicum gebasseerd op het omgevingslicht gemeten via de licht sensor. Deze moet remote 
   aanpasbaar zijn zodat, indien de 'gezondheid' van de plant achteruit gaat, de gebruiker deze kan aanpassen zonder zich naar de kast te moeten verplaatsen en dit in de code 
   moet gaan aanpassen. Per niveau is er een LED-controller zodat de LED's per niveau kunnen worden aangepast. 
   Basilicum moet een ten minste 14u-16 licht op een dag krijgen. Daarnaast moet het voor minimum 8u donker zijn. In de 14u dat de basilicum licht krijgt moet er een Daily Light 
   Intergral (DLI) van minstens 12 mol/m2 per dag worden overschreden. Met deze twee waarden kan er dan berekend worden hoeveel lux basisilicum moet krijgen en hoeveel lux de LED 
-  lampen moeten geven. 
+  lampen moeten geven. (Alger, 2021; Deepak, 2020; GmbH, 2021; Polsfuss, 2021; Sandy, 2021)
   Om van DLI naar lux te kunnen gaan moeten we eerst nog een tussenstap nemen. Dit is de Photosynthetic Photon Flux Density (PPFD). De PPFD is een waarde die aangeeft hoeveel 
   fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht. Dit bevindt zich tussen 400 en 700nm. De PPFD is uitgedrukt in µmol fotonen/m²s. Om 
   zeker te zijn dat de basilicum voor voldoende tijd genoeg licht heeft gekregen gaan we in onze berekeningen rekenen dat de basilicum voor 15u licht krijgt. We weten dat 
@@ -228,7 +228,7 @@ De kast bestaat uit verschillende onderdelen:
   tegen de minimum grens van onze 12 mol/m2 DLI is beslissen we om voor een PPFD van 250 µmol fotonen/m²s voor 15u te gaan. Dit komt dan uit op een DLI van 13.5 mol/m2. Om gezet 
   naar lux is dit 2818 lux voor een Red + Blue LED met een golflengte van 450 + 650nm. Dit zijn allemaal theoretische waarden. Verder tests moeten uitwijzen of deze waarden ook 
   effectief ideaal zijn voor basilicum. Er kan tijdens het testen van de kast per niveau een andere waarde kunnen worden ingesteld die bereikt moet worden om zo tebekijken welke 
-  waarde het meest optimaal is. 
+  waarde het meest optimaal is. (Waveform, 2021)
   <li>Lichtsensor</li>
        De lichtsensor detecteert het omgevings licht en geeft dit door aan de LED-controller. De LED-controller past de licht sterkte van de LED dan aan om de gepaste lux te 
   bekomen. Indien het omgevings licht 2000 lux is zal de LED controller de LED's aansturen om de overige 818 lux, indien er gestreefd wordt om een PPFD van 250 µmol fotonen/m²s 
@@ -241,16 +241,15 @@ De kast bestaat uit verschillende onderdelen:
   <li>Temperatuursensor</li>
       De temperatuursensor meet de omgevingstemperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt 
   meegenomen in de analyse maar zal enkel toegevoegd worden indien er nog tijd over is. De ideale temperatuur om basilicum te laten groeien is tussen de 18 en 21 graden. 
-  Daarnaast moet de luchtvochtigheid best rond de 65% blijven maar wel onder de 70%.
+  Daarnaast moet de luchtvochtigheid best rond de 65% blijven maar wel onder de 70%. (Alger, 2021; Miller, 2021; Deepak, 2021; Smith, 2021; Polsfuss, 2021)
   <li>Watersensor</li>
       De water sensor bepaald of er genoeg water in de buizen is en stuurt de pompcontroller aan indien dit niet het geval is. Hierdoor is er op elk moment voldoende water 
   aanwezig in de buizen zodat de plant voldoende voeding kan opnemen. 
   <li>pH-sensor</li>
       De pH-sensor zorgt ervoor dat de pH waarde van het water optimaal blijft zodat de basilicum kan blijven groeien. Een pH-waarde tussen de 5.5 en 6.5 is ideaal voor 
-  basilicum.
+  basilicum. (Polsfuss, 2021; Sandy, 2021; Miller, 2021; Gillespie, 2021)
 </ul> 
 
-Referenties..
 
 Deze onderdelen worden in het technisch design verder uitgepunt.
 
@@ -566,4 +565,27 @@ Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken.
 ## Analyse van security en eventuele autorisatierollen
 
 ## Documentatie
+
+De documentie zal te vinden zijn op github. Indien er aanpassingen aan het project gebeuren zullen deze steeds in de repo worden toegevoegd. Hierdoor kunnen toekomstige 
+iteraties steeds verder bouwen op deze documentatie en wordt er vermeden dat er dubbel werk wordt gedaan. <br><br>
+De codes worden voorzien van comments waarin er wordt uitgelegd wat die bepaalde code delen betekenen. Hierdoor kan er gemakkelijk worden voortgebouwd op al bestaande code 
+zonder grote delen opnieuw te moeten schrijven.
+
 ## Bronvermelding
+Alger, H. (2021). Hydroponic & Container Basil Guide. Opgehaald van johnnyseeds: https://www.johnnyseeds.com/growers-library/herbs/basil/hydroponic-container-basil-guide.html
+<br>Deepak, Y. (2020, september 6). Fundamentals of Growing Basil in Hydroponics. Opgehaald van Barton Breeze: https://www.bartonbreeze.com/post/fundamentals-of-growing-basil-in-hydroponics
+<br>Deepak, Y. (2021, juli 11). How to use Nutrient Film Technique in Hydroponic Gardens? Opgehaald van Barton Breeze: https://www.bartonbreeze.com/post/how-to-use-nutrient-film-technique-in-hydroponic-gardens
+<br>Gillespie, D. (2019, Maart). Influence of nutrient solution pH on hydroponic basil (Ocimum basilicum) plant growth. Opgehaald van Knowledge Bank: 
+https://kb.osu.edu/bitstream/handle/1811/87405/1/Hayes2019_Gillespie_Manuscript.pdf
+<br>GmbH, L. I. (2021). The Daily Light Integral of Plants. Opgehaald van Grow light meter: https://growlightmeter.com/how-much-light-does-my-plant-need/
+<br>Miller, A. (2020, september 23). How To Grow Hydroponic Basil In 4 Easy Steps. Opgehaald van Krostrade: https://krostrade.com/blog/how-to-grow-hydroponic-basil/
+<br>Polsfuss, L. (2021, Juni 29). Basilikum in Hydroponik - 8 Tipps. Opgehaald van Pflanzenfabrik: https://www.pflanzenfabrik.de/hydroponik-basilikum/
+<br>Polsfuss, L. (2021, juni 24). Die Tiefwasserkultur. Opgehaald van Pflanzenfabrik: https://www.pflanzenfabrik.de/tiefwasser-kultur/
+<br>Polsfuss, L. (2021, juli 26). Hydroponic & Container Basil Guide. Opgehaald van Pflanzenfabrik: https://www.johnnyseeds.com/growers-library/herbs/basil/hydroponic-container-
+basil-guide.html
+<br>Polsfuss, L. (2021, juli 26). Pflanzen für Hydroponik | Guide |. Opgehaald van Pflanzefabrik: https://www.pflanzenfabrik.de/hydroponik-pflanzen/
+<br>Sandy, J. (2021, mei 4). How To Grow Hydroponics Basil Effectively (Ph, Growth Rate)? Opgehaald van Constant Delights: https://constantdelights.com/post/hydroponics-basil
+<br>Smith, R. (2021). Growing Hydroponic Basil - The Definitive Guide. Opgehaald van Comfyhomecorner: https://comfyhomecorner.com/growing-hydroponic-basil/
+<br>Waveform, L. (2021). Convert PPFD to Lux - Online Calculator. Opgehaald van Waveform Lighting: https://www.waveformlighting.com/horticulture/convert-ppfd-to-lux-online-
+calculator
+<br>Waveform, L. (2021). Daily Light Integral (DLI) Calculator. Opgehaald van Waveform Lighting: https://www.waveformlighting.com/horticulture/daily-light-integral-dlicalculator
