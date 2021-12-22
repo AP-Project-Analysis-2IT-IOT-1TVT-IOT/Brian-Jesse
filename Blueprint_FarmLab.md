@@ -480,7 +480,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 ### IOT Dashboard/Platform
 
-**We hebben een platform/server nodig om:**
+**Er is een platform/server nodig om:**
 
 - Verzamelde data weer te geven
 - Controle opdrachten te sturen
@@ -501,8 +501,8 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 ## Beschrijving van de mogelijke interfaces
 
-Deze kast maakt gebruik van Node-RED die gaat communniceren met een ESP32 vanuit deze stuurt de gebruiker meerdere ESP32’s aan.
-Deze sturen dan de pompen en leds aan
+Deze kast maakt gebruik van Node-RED die gaat communniceren met een ESP32. Hieruit stuurt de gebruiker meerdere ESP32’s aan.
+Deze sturen dan de pompen en leds aan.
 
 ![image](https://user-images.githubusercontent.com/91600019/146913436-9cd7562f-4817-4814-a30e-195f017d2579.png)
 ### Node-RED editor
@@ -518,7 +518,7 @@ Deze sturen dan de pompen en leds aan
 
 
 ## Beschrijving van eventuele datamigratie
-### AD kast process
+### Proces kast
 
 ![image](https://user-images.githubusercontent.com/91600019/147066956-a3d0ed74-8941-4fea-804c-2fcb5c0bae77.png)
 
