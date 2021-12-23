@@ -107,7 +107,7 @@ In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en 
 
 ## Situatie To-Be
 
-![image](https://user-images.githubusercontent.com/91600019/147231608-6b804da2-2346-4aa5-8489-cdebefcd3b79.png)
+![image](https://user-images.githubusercontent.com/91600019/147231832-dfd95905-f9b9-4898-aab8-8e6510c40046.png)
 
 In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verbeterd. Dit houdt in dat de zes verschillende componenten waaruit de kast is opgebouwd verder 
 worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. Daarnaast wordt er tijdens iteratie vijf een tweede kast 
