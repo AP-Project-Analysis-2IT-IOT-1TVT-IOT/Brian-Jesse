@@ -113,7 +113,7 @@ In versie vijf worden de probleemstellingen van versie vier bloot gelegd en verb
 worden verfijnd en geoptimaliseerd zodat de kast een periode van één maand zelfstandig kan werken met remote besturing. Daarnaast wordt er tijdens iteratie vijf een tweede kast 
 opgebouwd. 
 
-De 3 hoofdproblemen van de as is worden verder uitgewerkt. 
+De 3 hoofdproblemen van de as is worden verder uitgewerkt: 
 
 <ol>
    <li>Kast</li>
@@ -124,7 +124,7 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
     </ul>
   <li>Automatisatie</li>
     <ul>
-      <li>Node Red</li>
+      <li>Node-RED</li>
       <li>User input</li>
       <li>Tweede pomp voor voedingsstoffen</li>
       <li>XY-systeem</li>
@@ -142,8 +142,8 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 ### Projectdefinitie
 <ul>
   <li> Doelstelling</li>
-  Het doel van iteratie 5 van het farmlab is om geen Raspberry Pi of NodeMCU's te gebruiken maar deze te vervangen door ESP32's. Daarnaast wordt er een XY systeem gebouwd met 
-  een beweegbare camera en wordt er gebruik gemaakt van Node-Red. 
+  Het doel van iteratie 5 van het farmlab is om geen Raspberry Pi of NodeMCU's te gebruiken maar deze te vervangen door ESP32's. Daarnaast wordt er een XY-systeem gebouwd met 
+  een beweegbare camera en wordt er gebruik gemaakt van Node-RED. 
   <li> Scope</li>
   <ul>
     <li>AI aan XY-systeem toevoegen voor plant herkenning</li>
@@ -167,12 +167,12 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 </ul>
 <div style="page-break-after: always"></div>
 
-## Planning (1e semester)
+## Planning (1ste semester)
 
 <ul>
   <li>Kanban</li>
   <li>Sprint per week op donderdag</li>
-  <li>Tools : word , github(project kanban)</li>
+  <li>Tools : word, github (project kanban)</li>
 </ul><br>
 
 
@@ -200,7 +200,13 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 ## Planning uitvoering (2de semester)
 
-De uitvoering begint met de aankoop van het desbetreffende materiaal. Dit gebeurd al helemaal in het begin om rekening te houden met levertijden die enige tijd kunnen duren. 
+<ul>
+  <li>Kanban</li>
+  <li>Sprint per week op woensdag</li>
+  <li>Tools : word, github (project kanban)</li>
+</ul><br>
+
+De uitvoering begint met de aankoop van het desbetreffende materiaal. Dit gebeurt al helemaal in het begin om rekening te houden met levertijden die enige tijd kunnen duren. 
 Tijdens de bestelling kunnen de verschillende sensoren en controllers al worden aangepast en geoptimaliseerd. Daarnaast kunnen de problemen van de vierde versie worden bekeken 
 en opgelost indien dit al mogelijk is. 
 Nadat er een sensor of controller is aangepast moet deze al direct worden getest. Op deze manier kan er, mocht er probleem optreden, een oplossing worden gezocht voor de 
@@ -269,7 +275,7 @@ De kast bestaat uit verschillende onderdelen:
       Het XY-systeem is het systeem dat zich aan de achterkant van de kast bevindt. Dit systeem dient om, aan de hand van een camera en AI, te herkennen wanneer de plant die in 
   de kast wordt geteeld volgroeid is en deze dan met het XY-systeem te oogsten. Daarnaast kan dit systeem informatie sturen over het groeiproces van de plant, het pomp systeem 
   aanpassen indien nodig alsook de belichting. Het XY-systeem met zijn AI is als ware de brein van het Farmlab. Momenteel is het XY-systeem op de kast gemonteerd en kan dit 
-  bewegen in het XY-vlak maar is er nog geen camera of AI systeem geïnstalleerd. 
+  bewegen in het XY-vlak maar is er nog geen camera of AI-systeem geïnstalleerd. 
   <li>Temperatuursensor</li>
       De temperatuursensor meet de omgevingstemperatuur. Aan de hand van deze data kan er dan iets voorzien worden om de temperatuur te doen stijgen of dalen. Dit wordt 
   meegenomen in de analyse maar zal enkel toegevoegd worden indien er nog tijd over is. De ideale temperatuur om basilicum te laten groeien is tussen de 18 en 21 graden. 
