@@ -4,8 +4,8 @@
 
 | Nr. |  Datum     | Verspreiding     | status     | Wijziging     | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 0.01| 02-12-2021 | Brian<br>Jesse<br>Van Houtven| Eerste Draft | opmaak md file titels, AS-IS, To-be, functioneel design gemaakt|
-| 0.5 | 17-12-2021| Brian<br>Jesse<br>Van Houtven| Tweede Draft | Technisch design, beschrijving mogelijke interfaces, eventuele datamigratie,impact huidige infrastructuur, analyse autoristatierollen|
+| 0.01| 02-12-2021 | Brian<br>Jesse<br>Van Houtven| Eerste Draft | opmaak md file, titels, As-Is, To-Be en functioneel design gemaakt|
+| 0.5 | 17-12-2021| Brian<br>Jesse<br>Van Houtven| Tweede Draft | technisch design, beschrijving mogelijke interfaces, eventuele datamigratie,impact huidige infrastructuur en analyse autoristatierollen|
 | 1.0| 23-12-2021 | Brian<br>Jesse<br>Van Houtven | Finale Versie | titelblad, planning uitvoering,documentatie,samenvatting en bronvermelding afgewerkt|
 
 ## Termen en afkortingen
@@ -33,10 +33,11 @@ Maarten Luyts is de productowner en begeleider van het project.
 
 ## Samenvatting
 
-Farmlab is een project voor IOT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. Er wordt verder gebouwd op iteratie vier. 
+Farmlab is een project voor IoT studenten van het 2e jaar. Hierbij wordt er verder gebouwd op vorige iteraties. Er wordt verder gebouwd op iteratie vier. 
 
 Het farmlab is een kast met 3 niveau’s waarbij planten als een hydrocultuur kunnen groeien. Dit wil zeggen dat de planten niet in de grond zitten maar met hun wortels direct in 
-water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. 
+water liggen en via voedingsstoffen in het water kunnen groeien. Op deze manier is er geen vruchtbare grond nodig en kan de plantage in de hoogte worden uitgebereid. De gekozen 
+plant is basilicum.
 
 De kast wordt volledig geautomatiseerd zodat al de verschillende componenten remote kunnen worden gecontroleerd en bestuurd. 
 
