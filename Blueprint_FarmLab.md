@@ -1,5 +1,7 @@
 [TOC]
 
+<div style="page-break-after: always"></div>
+
 ## Versiebeheer
 
 | Nr. |  Datum     | Verspreiding     | Status     | Wijziging     | 
@@ -7,6 +9,8 @@
 | 0.01| 02-12-2021 | Brian<br>Jesse<br>Van Houtven| Eerste Draft | opmaak md file, titels, As-Is, To-Be en functioneel design gemaakt|
 | 0.5 | 17-12-2021| Brian<br>Jesse<br>Van Houtven| Tweede Draft | technisch design, beschrijving mogelijke interfaces, eventuele datamigratie,impact huidige infrastructuur en analyse autoristatierollen|
 | 1.0| 23-12-2021 | Brian<br>Jesse<br>Van Houtven | Finale Versie | titelblad, planning uitvoering,documentatie,samenvatting en bronvermelding afgewerkt|
+
+<div style="page-break-after: always"></div>
 
 ## Termen en afkortingen
 
@@ -21,6 +25,8 @@
 | EC | Electric conductivity. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm.  (Polsfuss, 2021)  |
 | DLI |Daily Light Integral. DLI beschrijft het aantal fotosynthetisch actieve fotonen (afzonderlijke lichtdeeltjes in het bereik van 400-700 nm) dat gedurende een periode van 24 uur aan een bepaald gebied wordt afgegeven. ("Daily light integral", 2021)     |
 | PPFD |Photosynthetic Photon Flux Density. De PPFD is een waarde die aangeeft hoeveel fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht. (Waveform, 2021)     |
+
+<div style="page-break-after: always"></div>
 
 | Term |  Omschrijving     | 
 | ----------- | ----------- |
