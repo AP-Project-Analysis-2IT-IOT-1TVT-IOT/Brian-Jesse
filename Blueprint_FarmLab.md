@@ -171,16 +171,16 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt.
 
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
-| As is / To be| 2 Dec      |Jesse|
+| As is / To be| 2 dec      |Jesse|
 | Functioneel design| 2 dec |Brian, Jesse|
 | Technische design | 9 dec |Brian, Jesse |
-| Beschrijving van mogelijke interfaces | 9 dec|TBD|
-| Beschrijving van eventuele datamigratie | 9 dec |TBD|
-| Beschrijving van eventuele impact op de huidige infrastructuur | 16 dec|TBD|
-| Analyse van security en eventuele autorisatierollen | 16 dec|TBD|
-| Uitvoering planning | 23 dec|TBD|
-| Documentatie | 23 dec|TBD|
-| Samenvatting| 23 dec |Jesse Denaux|
+| Beschrijving van mogelijke interfaces | 9 dec|Brian, Jesse|
+| Beschrijving van eventuele datamigratie | 9 dec |Brian, Jesse|
+| Beschrijving van eventuele impact op de huidige infrastructuur | 16 dec|Brian, Jesse|
+| Analyse van security en eventuele autorisatierollen | 16 dec|Brian|
+| Uitvoering planning | 23 dec|Brian, Jesse|
+| Documentatie | 23 dec|Jesse|
+| Samenvatting| 23 dec |Jesse|
 | Bronvermelding | Continue |Brian en Jesse|
 
 <div style="page-break-after: always"></div>
