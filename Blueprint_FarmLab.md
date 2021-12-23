@@ -6,20 +6,20 @@
 
 | Term |  Omschrijving     | 
 | ----------- | ----------- |
-| IoT |Internet of Things.  IoT is het geheel aan apparaten (“dingen”) die via internetverbindingen met andere apparaten of systemen in contact staan en daarmee gegevens uitwisselen. (Anoniem, 2021)     |
-| PCB | Printed circuit board. PCB is een plaat van isolatiemateraal die dient als drager voor elektrische componenten, waarop koperen bedradingen, genaamd sporen, zijn aangebracht ter verbinding van die componenten. (Anoniem, 2021)  |
-| ESP32| ESP32 is een budgetserie van laag-vermogen microcontrollers met geïntegreerde Wi-Fi en dual-mode Bluetooth. (Anoniem, 2020)    |
-| LED |Light emitting diode. LED is een elektronische halfgeleidercomponent opgebouwd als een diode die bij stroomdoorgang in de doorlaatrichting licht uitstraalt. (Anoniem, 2021)     |
-| UI |  User interface. UI is de interface tussen een computer (of andere machine) en de mens die de computer gebruikt. (Anoniem, 2021)   |
-| SMD |Surface-mounted device. SMD is een term uit de elektrotechniek en betekent letterlijk 'oppervlak-gemonteerde component. (Anoniem, 2021)     |
-| EC | Electric conductivity. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm.    |
-| DLI |Daily Light Integral. DLI beschrijft het aantal fotosynthetisch actieve fotonen (afzonderlijke lichtdeeltjes in het bereik van 400-700 nm) dat gedurende een periode van 24 uur aan een bepaald gebied wordt afgegeven. (Anoniem, 2021)     |
-| PPFD |Photosynthetic Photon Flux Density. De PPFD is een waarde die aangeeft hoeveel fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht.     |
-| AI | Artificiële intelligentie. AI is de wetenschap die zich bezighoudt met het creëren van een artefact dat een vorm van intelligentie vertoont. (Anoniem, 2021)    |
-| HTTP |Hypertext Transfer Protocol. HTTP is het protocol voor de communicatie tussen een webclient (meestal een webbrowser of een app) en een webserver. (Anoniem, 2020)     |
-| MQTT | MQ Telemetry Transport. MQTT is een lichtgewicht, publish-subscribe netwerkprotocol dat berichten tussen apparaten transporteert. (Anoniem, 2021)    |
-| API |Application programming interface. API is een verzameling definities op basis waarvan een computerprogramma kan communiceren met een ander programma of onderdeel (meestal in de vorm van bibliotheken). (Anoniem, 2021)     |
-| AI |Activity diagram. AD  is een diagram dat het verband weergeeft tussen verschillende activiteiten of bewerkingen meestal van een proces binnen een bedrijf. (Anoniem, 2021)     |
+| IoT |Internet of Things.  IoT is het geheel aan apparaten (“dingen”) die via internetverbindingen met andere apparaten of systemen in contact staan en daarmee gegevens uitwisselen. ("Internet der dingen", 2021)     |
+| PCB | Printed circuit board. PCB is een plaat van isolatiemateraal die dient als drager voor elektrische componenten, waarop koperen bedradingen, genaamd sporen, zijn aangebracht ter verbinding van die componenten. ("Printplaat", 2021)  |
+| ESP32| ESP32 is een budgetserie van laag-vermogen microcontrollers met geïntegreerde Wi-Fi en dual-mode Bluetooth. ("ESP32", 2020)    |
+| LED |Light emitting diode. LED is een elektronische halfgeleidercomponent opgebouwd als een diode die bij stroomdoorgang in de doorlaatrichting licht uitstraalt. ("Led", 2021)     |
+| UI |  User interface. UI is de interface tussen een computer (of andere machine) en de mens die de computer gebruikt. (Gebruikersomgeving", 2021)   |
+| SMD |Surface-mounted device. SMD is een term uit de elektrotechniek en betekent letterlijk 'oppervlak-gemonteerde component. ("Surface-mounted device", 2021)     |
+| EC | Electric conductivity. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm.  (Polsfuss, 2021)  |
+| DLI |Daily Light Integral. DLI beschrijft het aantal fotosynthetisch actieve fotonen (afzonderlijke lichtdeeltjes in het bereik van 400-700 nm) dat gedurende een periode van 24 uur aan een bepaald gebied wordt afgegeven. ("Daily light integral", 2021)     |
+| PPFD |Photosynthetic Photon Flux Density. De PPFD is een waarde die aangeeft hoeveel fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht. (Waveform, 2021)     |
+| AI | Artificiële intelligentie. AI is de wetenschap die zich bezighoudt met het creëren van een artefact dat een vorm van intelligentie vertoont. ("Kuntsmatige intelligentie", 2021)    |
+| HTTP |Hypertext Transfer Protocol. HTTP is het protocol voor de communicatie tussen een webclient (meestal een webbrowser of een app) en een webserver. ("Hypertext Transfer Protocol", 2020)     |
+| MQTT | MQ Telemetry Transport. MQTT is een lichtgewicht, publish-subscribe netwerkprotocol dat berichten tussen apparaten transporteert. ("MQTT", 2021)    |
+| API |Application programming interface. API is een verzameling definities op basis waarvan een computerprogramma kan communiceren met een ander programma of onderdeel (meestal in de vorm van bibliotheken). ("Application programming interface", 2020)     |
+| AI |Activiteitendiagram. AD  is een diagram dat het verband weergeeft tussen verschillende activiteiten of bewerkingen meestal van een proces binnen een bedrijf. ("Activiteitendiagram", 2021)     |
 
 
 ## Opdrachtgever
@@ -95,10 +95,6 @@ Er zijn 3 hoofdproblemen waar er momenteel wordt aan gewerkt. Deze zijn:
 </ol>
 
 In grote lijnen wordt versie 3 van het Farmlab gebruiksvriendelijker gemaakt en geautomatiseerd. (De Gendt et al., 2021)
-
-
-*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
-*Text van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
 
 <div style="page-break-after: always"></div>
 
@@ -294,7 +290,7 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 #### Kast ontwerp
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
 
-Documentatie van ontwerp: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast
+(De Gendt et al., 2021)
 
 #### Buis support V3
 V3 is momenteel het finale design van de supports. Na het monteren van de V2's zijn er enkele problemen opgedoken tijdens het monteren van de supports en de buizen. De 
@@ -302,7 +298,7 @@ volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij
 - De verbreding van de poten aan de onderkant zorgen ervoor dat tijdens het monteren van de supports aan het hout met vijzen deze makkelijker bereikbaar zijn.
 - De toevoeging van uitsparingen voor M4 moeren in het onderste gedeelte zorgen ervoor dat de moeren in de print vastgezet kunnen worden.
 
-Documentatie naar vorige versies : https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
+(De Gendt et al., 2021)
 
 #### Buis support top
 ![image](https://user-images.githubusercontent.com/91600019/144415593-ff1d9519-1c01-4641-bc63-75d436ce7a8c.png)
@@ -326,7 +322,7 @@ ze bij elkaar te verbinden.
 | Breedte buitenste diameter: 65mm| Breedte diameter2: 40mm      |
 || De dikte van de binnenkant: 0.5mm      |
 
-Documentatie naar vorige versies :https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -384,7 +380,7 @@ backup aansluiting voor bekabelde voeding voorzien.
 Aangezien er voor de sensor geen grote capaciteit of vermogen nodig is, wordt er gekozen voor de Lithium Ion batterij. Deze zouden ook zonder houder kunnen worden bevestigd aan 
 de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algemeen
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -399,7 +395,7 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/algeme
 
 ![LED controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973327-589251bf-2576-476a-b7c3-4ce4a7b4b63e.jpg)
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LedController
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -426,7 +422,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 ![Lichtsensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973305-43037927-4fb0-42cf-94f0-058ef386ce7e.jpg)
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LichtSensor
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -440,7 +436,7 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/LichtSensor
 
 ![Pomp controller elektrisch schema](https://user-images.githubusercontent.com/93762886/146973356-16f29d0f-c8af-4636-bf06-941dd56c3a2e.jpg)
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/PompController
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -463,7 +459,7 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/PompController
 
 De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/TemperatuurSensor
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -477,7 +473,7 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/TemperatuurSens
 
 ![Water sensor elektrisch schema](https://user-images.githubusercontent.com/93762886/146973375-6501cada-98cf-4129-93e7-166c8f4067c8.jpg)
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/WaterSensor
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -556,7 +552,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 =>Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Software_analyse/algemeen
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -579,7 +575,7 @@ Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP
 ### UI
 ![image](https://user-images.githubusercontent.com/91600019/146913785-c37c27c9-7c5a-4eb9-8020-5b3c3a8c6749.png)
 
-https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/SoftwareGuide
+(De Gendt et al., 2021)
 
 <div style="page-break-after: always"></div>
 
@@ -697,3 +693,15 @@ basil-guide.html
 <br>Waveform, L. (2021). Convert PPFD to Lux - Online Calculator. Opgehaald van Waveform Lighting: https://www.waveformlighting.com/horticulture/convert-ppfd-to-lux-online-
 calculator
 <br>Waveform, L. (2021). Daily Light Integral (DLI) Calculator. Opgehaald van Waveform Lighting: https://www.waveformlighting.com/horticulture/daily-light-integral-dlicalculator
+<br>Internet der dingen. (2021, november 26) In Wikipedia. https://nl.wikipedia.org/wiki/Internet_der_dingen 
+<br>Printplaat. (2021, oktober 31) In Wikipedia. https://nl.wikipedia.org/wiki/Printplaat" 
+<br>ESP32. (2020, januari 16) In Wikipedia. https://nl.wikipedia.org/wiki/ESP32 
+<br>Led. (2021, december 1) In Wikipedia. https://nl.wikipedia.org/wiki/Led
+<br>Gebruikersomgeving. (2021, augustus 12) In Wikipedia. https://nl.wikipedia.org/wiki/Gebruikersomgeving 
+<br>Surface-mounted device. (2021, juni 29) In Wikipedia. https://nl.wikipedia.org/wiki/Surface-mounted_device 
+<br>Kunstmatige intelligentie. (2021, november 16) In Wikipedia. https://nl.wikipedia.org/wiki/Kunstmatige_intelligentie 
+<br>Daily light integral. (2021, september 14) In Wikipedia. https://en.wikipedia.org/wiki/Daily_light_integral 
+<br>Hypertext Transfer Protocol. (2021, april 6) In Wikipedia. https://nl.wikipedia.org/wiki/Hypertext_Transfer_Protocol 
+<br>MQTT. (2021, december 18) In Wikipedia. https://en.wikipedia.org/wiki/MQTT
+<brApplication programming interface. (2020, december 9) In Wikipedia. https://nl.wikipedia.org/wiki/Application_programming_interface
+<br> Activiteitendiagram. (2021, december 8) In Wikipedia. https://nl.wikipedia.org/wiki/Activiteitendiagram
