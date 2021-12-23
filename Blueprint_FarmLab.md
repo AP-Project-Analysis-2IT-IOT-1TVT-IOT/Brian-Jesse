@@ -1,10 +1,3 @@
-# Farmlab
-
-
-
-AP Hogeschool <br>
-Brian Van Campen en Jesse Denaux
-
 ## Opdrachtgever
 Maarten Luyts is de productowner en begeleider van het project.
 
