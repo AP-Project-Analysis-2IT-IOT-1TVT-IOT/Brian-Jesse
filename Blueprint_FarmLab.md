@@ -2,6 +2,12 @@
 
 ## Versiebeheer
 
+| Nr. |  Datum     | Verspreiding     | status     | Wijziging     | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| 0.01| 02-12-2021 | Brian<br>Jesse<br>Van Houtven| Eerste Draft | opmaak md file titels, AS-IS, To-be, functioneel design gemaakt|
+| 0.5 | 17-12-2021| Brian<br>Jesse<br>Van Houtven| Tweede Draft | Technisch design, beschrijving mogelijke interfaces, eventuele datamigratie,impact huidige infrastructuur, analyse autoristatierollen|
+| 1.0| 23-12-2021 | Brian<br>Jesse<br>Van Houtven | Finale Versie | titelblad, planning uitvoering,documentatie,samenvatting en bronvermelding afgewerkt|
+
 ## Termen en afkortingen
 
 | Term |  Omschrijving     | 
