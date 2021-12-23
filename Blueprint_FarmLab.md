@@ -355,7 +355,7 @@ ze bij elkaar te verbinden.
 #### Communicatie keuze
 | Type        |Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |
-| Wifi|-groot bereik<br>-makkelijk uitbreidbaar<br>-middelmatige afstand<br>-snel<br>-security instelbaar<br>-connectie naar Raspberry pi server mogelijk |-verbruikt relatief veel energie|
+| Wifi|-groot bereik<br>-makkelijk uitbreidbaar<br>-middelmatige afstand<br>-snel<br>-security instelbaar<br>|-verbruikt relatief veel energie|
 |Bluetooth|-makkelijk<br>-relatief zuinig|-korte afstand<br>-traag<br>-geen security<br>-ondersteund weinig apparaten (max 8)|
 |Bedraad |-makkelijk op korte afstand<br>-minder kans op externe verstoringen<br>-geen antenne nodig|-niet ideaal voor lange afstand (onoverzichtelijk)<br>-moeilijk uitbreidbaar|
 
@@ -427,7 +427,7 @@ de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 | [TSL2591](https://shop.mchobby.be/en/environnemental-press-temp-hum-gas/1599-tsl2591-sensor-lux-luminosite-lumiere-digital-3232100015999-adafruit.html) | 188µ | 	88000 |3,3-5V | I2C |  	8,69€ |
 |[TSL2591](https://www.kiwi-electronics.nl/nl/si1145-digital-uv-index-ir-visible-light-sensor-1574) | NaN | NaN | 3-5V | I2C | 11,99€ |
 
-De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
+De 'TSL2561' geeft de nodige accuraatheid voor een schappelijke prijs.
 
 <div style="page-break-after: always"></div>
 
@@ -470,7 +470,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 | HIH6130-021-001 | -40 | 125 | 0.5 | 2.3 | 5.5 | thru hole | apart | 8,41 |
 | SHT31-DIS-B | -40 | 125 | 0.2 | 2.15 | 5.5 | SMD reflow | apart | 4,5 |
 
-De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
+De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan de belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zou er bekomen kunnen worden met de 'SHT31-DIS-B', deze kan echter in de beginfases niet gebruikt worden omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
 
 (De Gendt et al., 2021)
 
@@ -494,13 +494,13 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 
 #### Data
 
-Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
+Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en Node-RED) en de ESP32's aanwezig op de PCB's.
 Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 <ol>
   <li>PompController: </li>
   <ul>
-    <li>NodeRED -> RaspberryPi broker -> ESP32 op pompcontroller:</li>
+    <li>Node-RED -> Centrale ESP32 -> ESP32 op pompcontroller:</li>
     <ul>
       <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
       <li>String "on" => Pomp gaat aan</li>
@@ -509,7 +509,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
   <li>LEDController:  </li>
   <ul>
-    <li>NodeRED -> RaspberryPi broker -> ESP32 op LEDController:</li>
+    <li>Node-RED -> Centrale ESP32 -> ESP32 op LEDController:</li>
     <ul>
       <li>Topics: farm/x/licht/level/y => y = level 1,2 OF 3</li>
       <li>String "on" => LED's op level y gaat aan</li>
@@ -518,7 +518,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
   <li>Lichtcontroller: </li>
   <ul>
-    <li>ESP32 op LichtSensorController -> RaspberryPi broker -> NodeRED</li>
+    <li>ESP32 op LichtSensorController -> Centrale ESP32 -> Node-RED</li>
     <ul>
       <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
       <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
@@ -543,7 +543,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 | Geen ingebouwde Standaard enkele QoS mogelijkheden| Standardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack|
 | | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
 
-=>MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
+=>MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in de opstelling.
 
 <div style="page-break-after: always"></div>
 
@@ -563,7 +563,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 | Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box (Not actively developed Plugin available) |
 | Makkelijk om snel data te kunnen verwerken naar een dashboard aan de hand van flows | Eerder gemaakt voor professionele klanten, werkt met verschillende entities voor apparaten en klanten. |  |
 
-=>Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
+=>Node-RED gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van het project (Thingsboard zou te uitgebreid zijn).
 
 (De Gendt et al., 2021)
 
@@ -597,50 +597,13 @@ Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP
 
 ![image](https://user-images.githubusercontent.com/91600019/147233394-4cc9b6d5-d828-4068-8b2a-2718d553bce2.png)
 
-<!-- 
-Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's. 
-Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
-
-<ol>
-  <li>PompController: </li>
-  <ul>
-    <li>NodeRED -> ESP32 -> ESP32 op pompcontroller:</li>
-    <ul>
-      <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
-      <li>String "on" => Pomp gaat aan</li>
-      <li>String "off" => Pomp gaan uit</li>
-    </ul>
-  </ul>
-  <li>LEDController:  </li>
-  <ul>
-    <li>NodeRED -> ESP32 -> ESP32 op LEDController:</li>
-    <ul>
-      <li>Topics: farm/x/licht/level/y => y = level 1,2 OF 3</li>
-      <li>String "on" => LED's op level y gaat aan</li>
-      <li>String "off" => LED's op level y gaat uit </li>
-    </ul>
-  </ul>
-  <li>Lichtcontroller: </li>
-  <ul>
-    <li>ESP32 op LichtSensorController -> ESP32 -> NodeRED</li>
-    <ul>
-      <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
-      <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
-      <li>Er worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
-    </ul>
-  </ul>
-</ol>
-
-#### Flowchart
-  
-![image](https://user-images.githubusercontent.com/91600019/145188599-96b2793f-83fa-45a8-893d-eea1d06fc426.png) -->
 
 <div style="page-break-after: always"></div>
 
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 
 Om communicatie tussen de verschillende ESP32's te voorzien is het noodzakelijk om een lokaal netwerk te hebben waar de ESP32's mee kunnen verbinden. Daarnaast is het mogelijk 
-om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan in de cloud. Enkele clouds die compatibel zijn met Node-red zijn IBM cloud, SenseTecnic FRED, 
+om de beelden van de plant, die de camera van het XY-systeem maakt, op te slaan in de cloud. Enkele clouds die compatibel zijn met Node-RED zijn IBM cloud, SenseTecnic FRED, 
 Amazon Web Services en Microsoft Azure. 
 Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken. 
 
@@ -648,13 +611,13 @@ Verder zijn er geen wijzigingen nodig om het farmlab operationeel te maken.
 
 ## Analyse van security en eventuele autorisatierollen
 
-### **Voor de Security van dit systeem**
+#### Voor de Security van dit systeem
 
 Omdat we werken met ESP32’s zal de gebruiker moeten verbinden op een netwerk met een wachtwoord. 
 Vervolgens zal de cloud beveiligd zijn met een naam en wachtwoord.
 Zie dat er steeds een sterk wachtwoord wordt gebruikt. Dit houdt in dat het wachtwoord ten minste 12 karakters lang is, random en uniek is en een combinatie van grote en kleine letters, nummers speciale symbolen en leestekens. 
 
-### **Autorisatierollen**
+#### Autorisatierollen
 
 Admin: kan alles aanpassen.
 -	Wachtwoord
@@ -668,10 +631,15 @@ Gebruiker: De gebruiker heeft alleen toegang tot een UI.
 -	Kast 
 
 
-
-### **Privacy**
+#### Privacy
 
 Aangezien de kasten alleen in scholen gaan staan zal de school toegang hebben tot deze kasten.
+
+#### BCP 
+
+Bij het uitvallen van de elektriciteit zal de batterij het systeem voor korte tijd overnemen en draaiende houden. In dit geval zal het netwerk ook uitliggen. De centrale ESP32 
+zal dan een access point maken waarop de andere ESP32's connecten. Hierdoor kan de kast nog verder functioneren tot het netwerk terug online is. Het versturen van foto's naar de 
+cloud zal in deze situatie niet meer gaan omdat de centrale ESP32 niet meer met het internet is verbonden. 
 
 <div style="page-break-after: always"></div>
 
