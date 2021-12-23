@@ -703,5 +703,5 @@ calculator
 <br>Daily light integral. (2021, september 14) In Wikipedia. https://en.wikipedia.org/wiki/Daily_light_integral 
 <br>Hypertext Transfer Protocol. (2021, april 6) In Wikipedia. https://nl.wikipedia.org/wiki/Hypertext_Transfer_Protocol 
 <br>MQTT. (2021, december 18) In Wikipedia. https://en.wikipedia.org/wiki/MQTT
-<brApplication programming interface. (2020, december 9) In Wikipedia. https://nl.wikipedia.org/wiki/Application_programming_interface
+<br>Application programming interface. (2020, december 9) In Wikipedia. https://nl.wikipedia.org/wiki/Application_programming_interface
 <br> Activiteitendiagram. (2021, december 8) In Wikipedia. https://nl.wikipedia.org/wiki/Activiteitendiagram
