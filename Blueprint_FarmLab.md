@@ -25,7 +25,7 @@
 | HTTP |Hypertext Transfer Protocol. HTTP is het protocol voor de communicatie tussen een webclient (meestal een webbrowser of een app) en een webserver. ("Hypertext Transfer Protocol", 2020)     |
 | MQTT | MQ Telemetry Transport. MQTT is een lichtgewicht, publish-subscribe netwerkprotocol dat berichten tussen apparaten transporteert. ("MQTT", 2021)    |
 | API |Application programming interface. API is een verzameling definities op basis waarvan een computerprogramma kan communiceren met een ander programma of onderdeel (meestal in de vorm van bibliotheken). ("Application programming interface", 2020)     |
-| AI |Activiteitendiagram. AD  is een diagram dat het verband weergeeft tussen verschillende activiteiten of bewerkingen meestal van een proces binnen een bedrijf. ("Activiteitendiagram", 2021)     |
+| AD |Activiteitendiagram. AD  is een diagram dat het verband weergeeft tussen verschillende activiteiten of bewerkingen meestal van een proces binnen een bedrijf. ("Activiteitendiagram", 2021)     |
 
 
 ## Opdrachtgever
@@ -595,7 +595,7 @@ Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale ESP
 ## Beschrijving van eventuele datamigratie
 ### Proces kast AD
 
-![image](https://user-images.githubusercontent.com/91600019/147104600-7d85d4cf-060c-4ba8-a8ce-9e306cfcad30.png)
+![image](https://user-images.githubusercontent.com/91600019/147233394-4cc9b6d5-d828-4068-8b2a-2718d553bce2.png)
 
 <!-- 
 Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's. 
