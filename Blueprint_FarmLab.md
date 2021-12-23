@@ -2,7 +2,7 @@
 
 ## Versiebeheer
 
-| Nr. |  Datum     | Verspreiding     | status     | Wijziging     | 
+| Nr. |  Datum     | Verspreiding     | Status     | Wijziging     | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | 0.01| 02-12-2021 | Brian<br>Jesse<br>Van Houtven| Eerste Draft | opmaak md file, titels, As-Is, To-Be en functioneel design gemaakt|
 | 0.5 | 17-12-2021| Brian<br>Jesse<br>Van Houtven| Tweede Draft | technisch design, beschrijving mogelijke interfaces, eventuele datamigratie,impact huidige infrastructuur en analyse autoristatierollen|
@@ -21,6 +21,9 @@
 | EC | Electric conductivity. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm.  (Polsfuss, 2021)  |
 | DLI |Daily Light Integral. DLI beschrijft het aantal fotosynthetisch actieve fotonen (afzonderlijke lichtdeeltjes in het bereik van 400-700 nm) dat gedurende een periode van 24 uur aan een bepaald gebied wordt afgegeven. ("Daily light integral", 2021)     |
 | PPFD |Photosynthetic Photon Flux Density. De PPFD is een waarde die aangeeft hoeveel fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht. (Waveform, 2021)     |
+
+| Term |  Omschrijving     | 
+| ----------- | ----------- |
 | AI | Artificiële intelligentie. AI is de wetenschap die zich bezighoudt met het creëren van een artefact dat een vorm van intelligentie vertoont. ("Kuntsmatige intelligentie", 2021)    |
 | HTTP |Hypertext Transfer Protocol. HTTP is het protocol voor de communicatie tussen een webclient (meestal een webbrowser of een app) en een webserver. ("Hypertext Transfer Protocol", 2020)     |
 | MQTT | MQ Telemetry Transport. MQTT is een lichtgewicht, publish-subscribe netwerkprotocol dat berichten tussen apparaten transporteert. ("MQTT", 2021)    |
@@ -295,7 +298,7 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 
 ## Technisch design
 ### Smart Object (Hardware Analyse)
-### Kast
+#### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
 
 <div style="page-break-after: always"></div>
