@@ -1,3 +1,27 @@
+[TOC]
+
+## Versiebeheer
+
+## Termen en afkortingen
+
+| Term |  Omschrijving     | 
+| ----------- | ----------- |
+| IoT |Internet of Things.  IoT is het geheel aan apparaten (“dingen”) die via internetverbindingen met andere apparaten of systemen in contact staan en daarmee gegevens uitwisselen. (Anoniem, 2021)     |
+| PCB | Printed circuit board. PCB is een plaat van isolatiemateraal die dient als drager voor elektrische componenten, waarop koperen bedradingen, genaamd sporen, zijn aangebracht ter verbinding van die componenten. (Anoniem, 2021)  |
+| ESP32| ESP32 is een budgetserie van laag-vermogen microcontrollers met geïntegreerde Wi-Fi en dual-mode Bluetooth. (Anoniem, 2020)    |
+| LED |Light emitting diode. LED is een elektronische halfgeleidercomponent opgebouwd als een diode die bij stroomdoorgang in de doorlaatrichting licht uitstraalt. (Anoniem, 2021)     |
+| UI |  User interface. UI is de interface tussen een computer (of andere machine) en de mens die de computer gebruikt. (Anoniem, 2021)   |
+| SMD |Surface-mounted device. SMD is een term uit de elektrotechniek en betekent letterlijk 'oppervlak-gemonteerde component. (Anoniem, 2021)     |
+| EC | Electric conductivity. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm.    |
+| DLI |Daily Light Integral. DLI beschrijft het aantal fotosynthetisch actieve fotonen (afzonderlijke lichtdeeltjes in het bereik van 400-700 nm) dat gedurende een periode van 24 uur aan een bepaald gebied wordt afgegeven. (Anoniem, 2021)     |
+| PPFD |Photosynthetic Photon Flux Density. De PPFD is een waarde die aangeeft hoeveel fotonenstroomdichtheid er is in het fotosynthetisch actieve lichtspectrum van het zonlicht.     |
+| AI | Artificiële intelligentie. AI is de wetenschap die zich bezighoudt met het creëren van een artefact dat een vorm van intelligentie vertoont. (Anoniem, 2021)    |
+| HTTP |Hypertext Transfer Protocol. HTTP is het protocol voor de communicatie tussen een webclient (meestal een webbrowser of een app) en een webserver. (Anoniem, 2020)     |
+| MQTT | MQ Telemetry Transport. MQTT is een lichtgewicht, publish-subscribe netwerkprotocol dat berichten tussen apparaten transporteert. (Anoniem, 2021)    |
+| API |Application programming interface. API is een verzameling definities op basis waarvan een computerprogramma kan communiceren met een ander programma of onderdeel (meestal in de vorm van bibliotheken). (Anoniem, 2021)     |
+| AI |Activity diagram. AD  is een diagram dat het verband weergeeft tussen verschillende activiteiten of bewerkingen meestal van een proces binnen een bedrijf. (Anoniem, 2021)     |
+
+
 ## Opdrachtgever
 Maarten Luyts is de productowner en begeleider van het project.
 
@@ -489,7 +513,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
     <ul>
       <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
       <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
-      <li>r worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
+      <li>Er worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
     </ul>
   </ul>
 </ol>
