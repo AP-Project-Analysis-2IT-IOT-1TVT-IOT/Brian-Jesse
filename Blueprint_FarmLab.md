@@ -172,6 +172,7 @@ De 3 hoofdproblemen van de as is worden verder uitgewerkt:
      <li>Systeemspecificaties voor verschillende planten</li>
      <li>Back-up systeem voor indien de elektriciteit uitvalt</li>
      <li>pH-controller</li>
+    <li>Elektrisch schema temperatuursensor</li>
   </ul>
 </ul>
 <div style="page-break-after: always"></div>
